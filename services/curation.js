@@ -85,6 +85,8 @@ module.exports = class Curation {
         break;
 
 
+
+
         /*response = Response.genQuickReply(i18n.__("curation.prompt"), [
           {
             title: i18n.__("curation.me"),
@@ -98,6 +100,18 @@ module.exports = class Curation {
         break;*/
 
       case "CURATION_1A":
+      response = Response.genQuickReply(i18n.__("curation.interviewq1"), [
+        {
+          title: i18n.__("curation.interview1a"),
+          payload: "CURATION_1A"
+        },
+        {
+          title: i18n.__("curation.interview1b"),
+          payload: "CURATION_1B"
+        }
+      ]);
+      break;
+
       case "CURATION_1B":
         response = Response.genQuickReply(i18n.__("curation.occasion"), [
           {
