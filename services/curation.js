@@ -69,8 +69,23 @@ module.exports = class Curation {
         ];
         break;
 
+        //can start edit here
       case "CURATION":
-        response = Response.genQuickReply(i18n.__("curation.prompt"), [
+      //ask interview questions and have answer options
+        response = Response.genQuickReply(i18n.__("curation.interviewq1"), [
+          {
+            title: i18n.__("curation.interview1a"),
+            payload: "CURATION_1A"
+          },
+          {
+            title: i18n.__("curation.interview1b"),
+            payload: "CURATION_1B"
+          }
+        ]);
+        break;
+
+
+        /*response = Response.genQuickReply(i18n.__("curation.prompt"), [
           {
             title: i18n.__("curation.me"),
             payload: "CURATION_FOR_ME"
@@ -80,10 +95,10 @@ module.exports = class Curation {
             payload: "CURATION_SOMEONE_ELSE"
           }
         ]);
-        break;
+        break;*/
 
-      case "CURATION_FOR_ME":
-      case "CURATION_SOMEONE_ELSE":
+      case "CURATION_1A":
+      case "CURATION_1B":
         response = Response.genQuickReply(i18n.__("curation.occasion"), [
           {
             title: i18n.__("curation.work"),
