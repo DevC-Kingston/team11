@@ -38,7 +38,8 @@
     "show": "Another look",
     "interviewq1" : "When interviewer ask: Tell me a little about yourself",
     "interview1a" : "Connect the dots to your resume",
-    "interview1b" : "Describe personal life"
+    "interview1b" : "Describe personal life",
+    "interview1correct" : "Well done, that was a great answer"
 
 
   },
