@@ -1,6 +1,5 @@
 {
   "profile": {
-    //this shows on fb page
     "greeting": "Welcome to Interview Coach {{user_first_name}}! Click get started to receive useful tips for your interview and resume."
   },
   "menu": {
@@ -12,7 +11,6 @@
     "start_over": "Start over"
   },
   "get_started": {
-    //this shows on website
     "welcome": "Hi {{userFirstName}}! Welcome to Interview Coach where you'll receive amazing tips for your interview or resume.",
     "guidance": "At any time, use the menu below to navigate through the features",
     "help": "How may we help?"
