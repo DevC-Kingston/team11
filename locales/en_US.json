@@ -1,19 +1,21 @@
 {
   "profile": {
-    "greeting": "Welcome to Interview Coach {{user_first_name}}! Click get started to enjoy our sample automated messaging experience. If you want to build a similar one visit https://fb.me/get-sample-oc"
+    //this shows on fb page
+    "greeting": "Welcome to Interview Coach {{user_first_name}}! Click get started to receive useful tips for your interview and resume."
   },
   "menu": {
     "support": "Customer Support",
     "order": "Order updates",
-    "help": "Talk to an agent",
-    "suggestion": "Outfit suggestions",
+    "help": "Resume Tips",
+    "suggestion": "Interview Tips",
     "shop": "Shop now",
     "start_over": "Start over"
   },
   "get_started": {
-    "welcome": "Hi {{userFirstName}}! Welcome to Original Coast Clothing where you'll find styles for every occasion.",
+    //this shows on website
+    "welcome": "Hi {{userFirstName}}! Welcome to Interview Coach where you'll receive amazing tips for your interview or resume.",
     "guidance": "At any time, use the menu below to navigate through the features",
-    "help": "How may we be of assistance to you?"
+    "help": "How may we help?"
   },
   "leadgen": {
     "promo": "Hi {{userFirstName}}, finding great outfits is now easier and more convenient.",
