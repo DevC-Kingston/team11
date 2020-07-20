@@ -97,6 +97,11 @@ module.exports = class Curation {
         break;*/
 
 
+//testing if this function allows printing
+        static genText(text) {
+          let response = {
+            text: text
+          };
 
 
         //tells user that they are correct
