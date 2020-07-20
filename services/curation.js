@@ -102,9 +102,8 @@ module.exports = class Curation {
         //tells user that they are correct
       case "CURATION_1A":
 
-      response = Response.genQuickReply(i18n.__("curation.interview1correct"), [
-
-      ]);
+        let test = this.genText(i18n.__("curation.interview1correct"));
+        return [test];
       break;
 
       case "CURATION_1B":
