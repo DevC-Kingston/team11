@@ -97,19 +97,22 @@ module.exports = class Curation {
         break;*/
 
 
-//testing if this function allows printing
-        static genText(text) {
-          let response = {
-            text: text
-          };
 
 
         //tells user that they are correct
       case "CURATION_1A":
+        response = Response.genQuickReply(i18n.__("curation.interview1correct"), [
+          {
+            // title: i18n.__("curation.interview1a"),
+            // payload: "CURATION_1A"
+          },
+          {
+            // title: i18n.__("curation.interview1b"),
+            // payload: "CURATION_1B"
+          }
+        ]);
+        break;
 
-        let test = this.genText(i18n.__("curation.interview1correct"));
-        return [test];
-      break;
 
       case "CURATION_1B":
         response = Response.genQuickReply(i18n.__("curation.occasion"), [
