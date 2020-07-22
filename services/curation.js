@@ -159,17 +159,17 @@ module.exports = class Curation {
             Response.genQuickReply(i18n.__("curation.whyworkhere"), [
               {
                 title: i18n.__("curation.whyworkhereappealing"),
-                payload: "CURATION_WHYWORKHEREANSWER"
+                payload: "CURATION_EYECONTACT"
               },
               {
                 title: i18n.__("curation.whyworkherereviews"),
-                payload: "CURATION_WHYWORKHEREANSWER"
+                payload: "CURATION_EYECONTACT"
               }
             ])
           ];
             break;
 
-            case "CURATION_WHYWORKHERE":
+            /*case "CURATION_WHYWORKHERE":
             response = [
               Response.genQuickReply(i18n.__("curation.whyworkhere"), [
                 {
@@ -182,7 +182,7 @@ module.exports = class Curation {
                 }
               ])
             ];
-              break;
+              break;*/
 
 
 
