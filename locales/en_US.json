@@ -55,7 +55,22 @@
     "eyecontactyes" : "yes",
     "eyecontactno" : "no",
     "eyecontactwhy" : "You should, the eyes acts as a window to your interest level, confidence and professionalism during an interview",
-    "finish" : "That was some good practice!"
+    "finish" : "That was some good practice!",
+    "resumeintro" : "Let's jump right into some tips",
+    "resumeshort" : "Make your resume simple and easy to read.",
+    "resumeshortexplanation" : "It makes it easier for employers, it's more inviting to read",
+    "resumeshortwhy" : "Why",
+    "resumeshortnexttip" : "Next Tip",
+    "resumemeasure" : "Should you include measureable numbers?",
+    "resumemeasureyes" : "If possible",
+    "resumemeasureyesno" : "No",
+    "resumemeasureexplanation" : "Employers are highly responsive to measurable proven value, so if possible add numbers",
+    "resumefont" : "Use a professional font. What size tho?",
+    "resumefont7-9" : "7-9",
+    "resumefont10-12" : "10-12",
+    "resumefont13-15" : "13-15",
+    "resumefontcorrect" : "Perfect answer!",
+    "resumefontwrong" : "Well, it's best to use font size 10-12 as it makes your resume more readable"
 
 
   },

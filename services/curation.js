@@ -257,20 +257,129 @@ module.exports = class Curation {
 
                 case "CURATION_RESUME":
                 response = [
-                  Response.genText(i18n.__("curation.eyecontactwhy")),
-                  Response.genQuickReply(i18n.__("curation.finish"), [
+                  Response.genText(i18n.__("curation.resumeintro")),
+                  Response.genQuickReply(i18n.__("curation.resumeshort"), [
                     {
-                      title: i18n.__("curation.mainmenu"),
-                      payload: "CURATION_FINISH"
+                      title: i18n.__("curation.resumeshortwhy"),
+                      payload: "CURATION_MEASURE"
                     },
                     {
-                      title: i18n.__("curation.startover"),
-                      payload: "CURATION_FINISH"
+                      title: i18n.__("curation.resumeshortnexttip"),
+                      payload: "CURATION_MEASUREONLY"
                     }
                   ])
 
                 ];
                   break;
+
+                  case "CURATION_MEASURE":
+                  response = [
+                    Response.genText(i18n.__("curation.resumeshortexplanation")),
+                    Response.genQuickReply(i18n.__("curation.resumemeasure"), [
+                      {
+                        title: i18n.__("curation.resumemeasureyes"),
+                        payload: "CURATION_FONT"
+                      },
+                      {
+                        title: i18n.__("curation.resumemeasureno"),
+                        payload: "CURATION_FONT"
+                      }
+                    ])
+
+                  ];
+                    break;
+
+                    //come here if the do not want to know why resume short
+                    case "CURATION_MEASURE_ONLY":
+                    response = [
+                      Response.genQuickReply(i18n.__("curation.resumemeasure"), [
+                        {
+                          title: i18n.__("curation.resumemeasureyes"),
+                          payload: "CURATION_FONT"
+                        },
+                        {
+                          title: i18n.__("curation.resumemeasureno"),
+                          payload: "CURATION_FONT"
+                        }
+                      ])
+
+                    ];
+                      break;
+
+
+
+
+                      case "CURATION_FONT":
+                      response = [
+                        Response.genText(i18n.__("curation.resumemeasureexplanation")),
+                        Response.genQuickReply(i18n.__("curation.resumefont"), [
+                          {
+                            title: i18n.__("curation.resumefont7-9"),
+                            payload: "CURATION_FONTWRONG"
+                          },
+                          {
+                            title: i18n.__("curation.resumefont10-12"),
+                            payload: "CURATION_FONTcorrect"
+                          },
+                          {
+                            title: i18n.__("curation.resumefont13-15"),
+                            payload: "CURATION_FONTWRONG"
+                          }
+                        ])
+
+                      ];
+                        break;
+
+                        case "CURATION_FONTWRONG":
+                        response = [
+                          Response.genText(i18n.__("curation.resumefontwrong")),
+                          Response.genQuickReply(i18n.__("curation.finish"), [
+                            {
+                              title: i18n.__("curation.mainmenu"),
+                              payload: "CURATION_FINISH"
+                            },
+                            {
+                              title: i18n.__("curation.startover"),
+                              payload: "CURATION_FINISH"
+                            }
+                          ])
+
+                        ];
+                          break;
+
+                          case "CURATION_FONTCORRECT":
+                          response = [
+                            Response.genText(i18n.__("curation.resumefontcorrect")),
+                            Response.genQuickReply(i18n.__("curation.finish"), [
+                              {
+                                title: i18n.__("curation.mainmenu"),
+                                payload: "CURATION_FINISH"
+                              },
+                              {
+                                title: i18n.__("curation.startover"),
+                                payload: "CURATION_FINISH"
+                              }
+                            ])
+
+                          ];
+                            break;
+
+                        case "CURATION_LASTQUESTION":
+                        response = [
+                          Response.genText(i18n.__("curation.eyecontactwhy")),
+                          Response.genQuickReply(i18n.__("curation.finish"), [
+                            {
+                              title: i18n.__("curation.mainmenu"),
+                              payload: "CURATION_FINISH"
+                            },
+                            {
+                              title: i18n.__("curation.startover"),
+                              payload: "CURATION_FINISH"
+                            }
+                          ])
+
+                        ];
+                          break;
 
 
 
@@ -300,7 +409,7 @@ module.exports = class Curation {
 
 
 
-
+                    //***********FINISH SCENARIOS************
 
                 case "CURATION_FINISH":
                 response = [
