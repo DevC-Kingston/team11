@@ -73,7 +73,7 @@ module.exports = class Curation {
         //will use for interview tips
       case "CURATION":
 
-      response = Response.genText(i18n.__("curation.interviewintro"));
+      response = Response.genText(i18n.__("curation.tellusaboutyourselfcorrect")),
 
       //ask interview questions and have answer options
         response = Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
