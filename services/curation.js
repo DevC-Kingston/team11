@@ -122,22 +122,66 @@ module.exports = class Curation {
         //tells user that they are correct
       case "CURATION_PROFESSIONALLIFE":
       response = [
-        Response.genText(i18n.__("curation.tellusaboutyourselfseeexample")),
+        Response.genText(i18n.__("curation.tellusaboutyourselfcorrect")),
         Response.genQuickReply(i18n.__("curation.tellusaboutyourselfseeexample"), [
           {
             title: i18n.__("curation.tellusaboutyourselfexampleyes"),
-            payload: "CURATION"
+            payload: "CURATION_TELLUSYOURSELFEXAMPLEYES"
           },
           {
             title: i18n.__("curation.tellusaboutyourselfexampleno"),
-            payload: "CARE_HELP"
+            payload: "CURATION_TELLUSYOURSELFEXAMPLENO"
           }
         ])
       ];
         break;
 
+        case "CURATION_PERSONALLIFE":
+        response = [
+          Response.genText(i18n.__("curation.tellusaboutyourselfwrong")),
+          Response.genQuickReply(i18n.__("curation.tellusaboutyourselfseeexample"), [
+            {
+              title: i18n.__("curation.tellusaboutyourselfexampleyes"),
+              payload: "CURATION_TELLUSYOURSELFEXAMPLEYES"
+            },
+            {
+              title: i18n.__("curation.tellusaboutyourselfexampleno"),
+              payload: "CURATION_WHYWORKHERE"
+            }
+          ])
+        ];
+          break;
 
-      case "CURATION_PERSONALLIFE":
+
+          case "CURATION_TELLUSYOURSELFEXAMPLEYES":
+          response = [
+            Response.genText(i18n.__("curation.tellusaboutyourselfexample")),
+            {
+              payload: "CURATION_TELLUSYOURSELFEXAMPLEYES"
+            }
+          ];
+            break;
+
+
+
+          case "CURATION_PERSONALLIFE":
+          response = [
+            Response.genText(i18n.__("curation.tellusaboutyourselfwrong")),
+            Response.genQuickReply(i18n.__("curation.tellusaboutyourselfseeexample"), [
+              {
+                title: i18n.__("curation.tellusaboutyourselfexampleyes"),
+                payload: "CURATION_TELLUSYOURSELFEXAMPLEYES"
+              },
+              {
+                title: i18n.__("curation.tellusaboutyourselfexampleno"),
+                payload: "CURATION_TELLUSYOURSELFEXAMPLENO"
+              }
+            ])
+          ];
+            break;
+
+
+      /*case "CURATION_PERSONALLIFE":
         response = Response.genQuickReply(i18n.__("curation.occasion"), [
           {
             title: i18n.__("curation.work"),
@@ -156,7 +200,7 @@ module.exports = class Curation {
             payload: "CARE_SALES"
           }
         ]);
-        break;
+        break;*/
 
       case "CURATION_OCASION_WORK":
         // Store the user budget preference here

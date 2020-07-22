@@ -41,6 +41,7 @@
     "professionallife" : "Professional life",
     "personallife" : "Personal life",
     "tellusaboutyourselfcorrect" : "Well done, that was a great answer",
+    "tellusaboutyourselfwrong" : "Sorry, that's not the best answer. It's better to describe mostly your professional side",
     "tellusaboutyourselfseeexample" : "Do you want to see an example",
     "tellusaboutyourselfexampleyes" : "yes",
     "tellusaboutyourselfexampleno" : "no",
