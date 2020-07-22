@@ -122,14 +122,14 @@ module.exports = class Curation {
         //tells user that they are correct
       case "CURATION_PROFESSIONALLIFE":
       response = [
-        Response.genText(i18n.__("CURATION.tellusaboutyourselfseeexample")),
-        Response.genQuickReply(i18n.__("CURATION.tellusaboutyourselfseeexample"), [
+        Response.genText(i18n.__("curation.tellusaboutyourselfseeexample")),
+        Response.genQuickReply(i18n.__("curation.tellusaboutyourselfseeexample"), [
           {
-            title: i18n.__("CURATION.tellusaboutyourselfexampleyes"),
+            title: i18n.__("curation.tellusaboutyourselfexampleyes"),
             payload: "CURATION"
           },
           {
-            title: i18n.__("tellusaboutyourselfexampleno"),
+            title: i18n.__("curation.tellusaboutyourselfexampleno"),
             payload: "CARE_HELP"
           }
         ])
