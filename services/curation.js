@@ -155,11 +155,17 @@ module.exports = class Curation {
 
           case "CURATION_TELLUSYOURSELFEXAMPLEYES":
           response = [
-            Response.genText(i18n.__("curation.tellusaboutyourselfexample"),[
-            {
-              payload: "CURATION_WHYWORKHERE"
-            }
-          ])
+            Response.genText(i18n.__("curation.tellusaboutyourselfexample")),
+            Response.genQuickReply(i18n.__("curation.whyworkhere"), [
+              {
+                title: i18n.__("curation.whyworkhereappealing"),
+                payload: "CURATION_WHYWORKHEREANSWER"
+              },
+              {
+                title: i18n.__("curation.whyworkherereviews"),
+                payload: "CURATION_WHYWORKHEREANSWER"
+              }
+            ])
           ];
             break;
 
