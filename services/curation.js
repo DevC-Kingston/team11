@@ -122,20 +122,15 @@ module.exports = class Curation {
         //tells user that they are correct
       case "CURATION_PROFESSIONALLIFE":
       response = [
-        Response.genText(
-          i18n.__("CURATION.tellusaboutyourselfcorrect", {
-            message: this.webhookEvent.message.text
-          })
-        ),
-
+        Response.genText(i18n.__("CURATION.tellusaboutyourselfseeexample")),
         Response.genQuickReply(i18n.__("CURATION.tellusaboutyourselfseeexample"), [
           {
             title: i18n.__("CURATION.tellusaboutyourselfexampleyes"),
-            //payload: "CURATION"
+            payload: "CURATION"
           },
           {
-            title: i18n.__("CURATION.tellusaboutyourselfexampleno"),
-            //payload: "CARE_HELP"
+            title: i18n.__("tellusaboutyourselfexampleno"),
+            payload: "CARE_HELP"
           }
         ])
       ];
