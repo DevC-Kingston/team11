@@ -155,10 +155,11 @@ module.exports = class Curation {
 
           case "CURATION_TELLUSYOURSELFEXAMPLEYES":
           response = [
-            Response.genText(i18n.__("curation.tellusaboutyourselfexample")),
+            Response.genText(i18n.__("curation.tellusaboutyourselfexample"),[
             {
               payload: "CURATION_WHYWORKHERE"
             }
+          ])
           ];
             break;
 
