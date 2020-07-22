@@ -74,7 +74,7 @@ module.exports = class Curation {
       case "CURATION":
 
       response = [
-        Response.genText(i18n.__("curation.tellusaboutyourselfcorrect")),
+        Response.genText(i18n.__("curation.interviewintro")),
 
       //ask interview questions and have answer options
         Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
@@ -121,7 +121,19 @@ module.exports = class Curation {
 
         //tells user that they are correct
       case "CURATION_PROFESSIONALLIFE":
-        response = Response.genText(i18n.__("curation.tellusaboutyourselfcorrect"));
+        response = [
+          Response.genText(i18n.__("curation.tellusaboutyourselfcorrect")),
+          Response.genQuickReply(i18n.__("curation.tellusaboutyourselfseeexample"), [
+            {
+              title: i18n.__("curation.tellusaboutyourselfexampleyes"),
+              //payload: "CURATION_tellusaboutyourselfexampleyes"
+            },
+            {
+              title: i18n.__("curation.tellusaboutyourselfexampleno"),
+              //payload: "CURATION_tellusaboutyourselfexamplno"
+            }
+          ])
+        ];
         break;
 
 
