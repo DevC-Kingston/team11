@@ -216,7 +216,7 @@ module.exports = class Curation {
                   title: i18n.__("curation.eyecontactno"),
                   payload: "CURATION_EYECONTACTWHY"
                 }
-              ]),
+              ])
 
             ];
               break;
