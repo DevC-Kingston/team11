@@ -78,14 +78,18 @@ module.exports = class Receive {
 
     let message = this.webhookEvent.message.text.trim().toLowerCase();
 
+    //maybe can choose what response here if confident
     let response;
 
     if (
       (greeting && greeting.confidence > 0.8) ||
       message.includes("start over")
     ) {
+      //seems genNuxMessage makes it start over
       response = Response.genNuxMessage(this.user);
-    } else if (Number(message)) {
+    } //seems
+      else if (Number(message)) {
+        //handlePayload choosewhich file to load or use based on listed inputs. This seems to be parsing all received text. can do some things here
       response = Order.handlePayload("ORDER_NUMBER");
     } else if (message.includes("#")) {
       response = Survey.handlePayload("CSAT_SUGGESTION");

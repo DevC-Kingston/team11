@@ -101,16 +101,7 @@ module.exports = class Curation {
 
         //tells user that they are correct
       case "CURATION_1A":
-        response = Response.genQuickReply(i18n.__("curation.interview1correct"), [
-          {
-            // title: i18n.__("curation.interview1a"),
-            // payload: "CURATION_1A"
-          },
-          {
-            // title: i18n.__("curation.interview1b"),
-            // payload: "CURATION_1B"
-          }
-        ]);
+        response = Response.genText(i18n.__("curation.interview1correct"))
         break;
 
 
