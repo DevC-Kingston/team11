@@ -8,7 +8,8 @@
     "help": "Resume Tips",
     "suggestion": "Interview Tips",
     "shop": "Shop now",
-    "start_over": "Start over"
+    "start_over": "Start over",
+    "job" : "Job Suggestions"
   },
   "get_started": {
     "welcome": "Hi {{userFirstName}}! Welcome to Interview Coach where you'll receive amazing tips for your interview or resume.",
@@ -53,7 +54,8 @@
     "eyecontact" : "Should you maintain good eye contact?",
     "eyecontactyes" : "yes",
     "eyecontactno" : "no",
-    "eyecontactwhy" : "The eye acts as a window to your interest level, confidence and professionalism during an interview"
+    "eyecontactwhy" : "You should, the eyes acts as a window to your interest level, confidence and professionalism during an interview",
+    "finish" : "That was some good practice!"
 
 
   },
@@ -75,7 +77,8 @@
     "default": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I'm here to assist you today. How can I help you?",
     "style": "Hi {{userFirstName}}, my name is {{agentFirstName}}, I’m here to answer questions you might have on our summer styles",
     "end": "This is as far as the demo goes. Leverage the power of the messenger platform for your business. See https://fb.me/get-sample-oc to learn how to build a similar experience",
-    "help": "Help"
+    "help": "Help",
+    "" : ""
   },
   "survey": {
     "prompt": "Hi, want to get quick feedback on your recent experience with {{agentFirstName}}",

@@ -69,8 +69,7 @@ module.exports = class Curation {
         ];
         break;
 
-        //can start edit here
-        //will use for interview tips
+        //**************************INTERVIEW********************
       case "CURATION":
 
       response = [
@@ -169,6 +168,22 @@ module.exports = class Curation {
           ];
             break;
 
+            //if they don't want an example
+            case "CURATION_TELLUSYOURSELFEXAMPLENO":
+            response = [
+              Response.genQuickReply(i18n.__("curation.whyworkhere"), [
+                {
+                  title: i18n.__("curation.whyworkhereappealing"),
+                  payload: "CURATION_EYECONTACT"
+                },
+                {
+                  title: i18n.__("curation.whyworkherereviews"),
+                  payload: "CURATION_EYECONTACT"
+                }
+              ])
+            ];
+              break;
+
             /*case "CURATION_WHYWORKHERE":
             response = [
               Response.genQuickReply(i18n.__("curation.whyworkhere"), [
@@ -238,9 +253,58 @@ module.exports = class Curation {
               ];
                 break;
 
+                //**************************RESUME********************
+
+                case "CURATION_RESUME":
+                response = [
+                  Response.genText(i18n.__("curation.eyecontactwhy")),
+                  Response.genQuickReply(i18n.__("curation.finish"), [
+                    {
+                      title: i18n.__("curation.mainmenu"),
+                      payload: "CURATION_FINISH"
+                    },
+                    {
+                      title: i18n.__("curation.startover"),
+                      payload: "CURATION_FINISH"
+                    }
+                  ])
+
+                ];
+                  break;
+
+
+
+                  //**************************JOB SUGGESTIONS********************
+
+                  case "CURATION_JOB_SUGGESTIONS":
+                  response = [
+                    Response.genText(i18n.__("curation.eyecontactwhy")),
+                    Response.genQuickReply(i18n.__("curation.finish"), [
+                      {
+                        title: i18n.__("curation.mainmenu"),
+                        payload: "CURATION_FINISH"
+                      },
+                      {
+                        title: i18n.__("curation.startover"),
+                        payload: "CURATION_FINISH"
+                      }
+                    ])
+
+                  ];
+                    break;
+
+
+
+
+
+
+
+
+
+
                 case "CURATION_FINISH":
                 response = [
-                  Response.genText(i18n.__("get_started.guidance")),
+                  //Response.genText(i18n.__("get_started.guidance")),
                   Response.genQuickReply(i18n.__("get_started.help"), [
                     {
                       title: i18n.__("menu.suggestion"),
