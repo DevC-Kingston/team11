@@ -198,7 +198,7 @@ module.exports = class Curation {
               },
               {
                 title: i18n.__("curation.tellusaboutyourselfexampleno"),
-                payload: "CURATION_TELLUSYOURSELFEXAMPLENO"
+                payload: "CURATION_EYECONTACT"
               }
             ])
           ];
@@ -210,25 +210,52 @@ module.exports = class Curation {
               Response.genQuickReply(i18n.__("curation.eyecontact"), [
                 {
                   title: i18n.__("curation.eyecontactyes"),
-                  payload: "CURATION_EYECONTACTWHY"
+                  payload: "CURATION_LASTQUESTION"
                 },
                 {
                   title: i18n.__("curation.eyecontactno"),
-                  payload: "CURATION_EYECONTACTWHY"
+                  payload: "CURATION_LASTQUESTION"
                 }
               ])
 
             ];
               break;
 
-              case "CURATION_EYECONTACTWHY":
+              case "CURATION_LASTQUESTION":
               response = [
                 Response.genText(i18n.__("curation.eyecontactwhy")),
-                {
-                  payload: "CURATION_FINISH"
-                }
+                Response.genQuickReply(i18n.__("curation.finish"), [
+                  {
+                    title: i18n.__("curation.mainmenu"),
+                    payload: "CURATION_FINISH"
+                  },
+                  {
+                    title: i18n.__("curation.startover"),
+                    payload: "CURATION_FINISH"
+                  }
+                ])
+
               ];
                 break;
+
+                case "CURATION_FINISH":
+                response = [
+                  Response.genText(i18n.__("get_started.guidance")),
+                  Response.genQuickReply(i18n.__("get_started.help"), [
+                    {
+                      title: i18n.__("menu.suggestion"),
+                      payload: "CURATION"
+                    },
+                    {
+                      title: i18n.__("menu.help"),
+                      payload: "CARE_HELP"
+                    }
+                  ])
+
+                ];
+                  break;
+
+
 
 
       /*case "CURATION_PERSONALLIFE":
