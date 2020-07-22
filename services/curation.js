@@ -157,10 +157,34 @@ module.exports = class Curation {
           response = [
             Response.genText(i18n.__("curation.tellusaboutyourselfexample")),
             {
-              payload: "CURATION_TELLUSYOURSELFEXAMPLEYES"
+              payload: "CURATION_WHYWORKHERE"
             }
           ];
             break;
+
+            case "CURATION_WHYWORKHERE":
+            response = [
+              Response.genQuickReply(i18n.__("curation.whyworkhere"), [
+                {
+                  title: i18n.__("curation.whyworkhereappealing"),
+                  payload: "CURATION_WHYWORKHEREANSWER"
+                },
+                {
+                  title: i18n.__("curation.whyworkherereviews"),
+                  payload: "CURATION_WHYWORKHEREANSWER"
+                }
+              ])
+            ];
+              break;
+
+              case "CURATION_WHYWORKHEREANSWER":
+              response = [
+                Response.genText(i18n.__("curation.whyworkhereexample")),
+                {
+                  payload: "CURATION_EYECONTACT"
+                }
+              ];
+                break;
 
 
 
@@ -179,6 +203,30 @@ module.exports = class Curation {
             ])
           ];
             break;
+
+            case "CURATION_EYECONTACT":
+            response = [
+              Response.genQuickReply(i18n.__("curation.eyecontact"), [
+                {
+                  title: i18n.__("curation.eyecontactyes"),
+                  payload: "CURATION_EYECONTACTWHY"
+                },
+                {
+                  title: i18n.__("curation.eyecontactno"),
+                  payload: "CURATION_EYECONTACTWHY"
+                }
+              ])
+            ];
+              break;
+
+              case "CURATION_EYECONTACTWHY":
+              response = [
+                Response.genText(i18n.__("curation.eyecontactwhy")),
+                {
+                  payload: "CURATION_FINISH"
+                }
+              ];
+                break;
 
 
       /*case "CURATION_PERSONALLIFE":
