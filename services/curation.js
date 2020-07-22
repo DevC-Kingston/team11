@@ -42,37 +42,55 @@ module.exports = class Curation {
         ];
         break;
 
-      case "COUPON_50":
-        outfit = `${this.user.gender}-${this.randomOutfit()}`;
-
-        response = [
-          Response.genText(i18n.__("leadgen.coupon")),
-          Response.genGenericTemplate(
-            `${config.appUrl}/styles/${outfit}.jpg`,
-            i18n.__("curation.title"),
-            i18n.__("curation.subtitle"),
-            [
-              Response.genWebUrlButton(
-                i18n.__("curation.shop"),
-                `${config.shopUrl}/products/${outfit}`
-              ),
-              Response.genPostbackButton(
-                i18n.__("curation.show"),
-                "CURATION_OTHER_STYLE"
-              ),
-              Response.genPostbackButton(
-                i18n.__("curation.sales"),
-                "CARE_SALES"
-              )
-            ]
-          )
-        ];
-        break;
+      // case "COUPON_50":
+      //   outfit = `${this.user.gender}-${this.randomOutfit()}`;
+      //
+      //   response = [
+      //     Response.genText(i18n.__("leadgen.coupon")),
+      //     Response.genGenericTemplate(
+      //       `${config.appUrl}/styles/${outfit}.jpg`,
+      //       i18n.__("curation.title"),
+      //       i18n.__("curation.subtitle"),
+      //       [
+      //         Response.genWebUrlButton(
+      //           i18n.__("curation.shop"),
+      //           `${config.shopUrl}/products/${outfit}`
+      //         ),
+      //         Response.genPostbackButton(
+      //           i18n.__("curation.show"),
+      //           "CURATION_OTHER_STYLE"
+      //         ),
+      //         Response.genPostbackButton(
+      //           i18n.__("curation.sales"),
+      //           "CARE_SALES"
+      //         )
+      //       ]
+      //     )
+      //   ];
+      //   break;
 
         //can start edit here
+        //will use for interview tips
       case "CURATION":
+
+      response = Response.genText(i18n.__("curation.interviewintro"))
+
       //ask interview questions and have answer options
-        response = Response.genQuickReply(i18n.__("curation.interviewq1"), [
+        response = Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
+          {
+            title: i18n.__("curation.professionallife"),
+            payload: "CURATION_PROFESSIONALLIFE"
+          },
+          {
+            title: i18n.__("curation.personallife"),
+            payload: "CURATION_PERSONALLIFE"
+          }
+        ]);
+        break;
+
+      /*case "CURATION":
+      //ask interview questions and have answer options
+        response = Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
           {
             title: i18n.__("curation.interview1a"),
             payload: "CURATION_1A"
@@ -82,7 +100,7 @@ module.exports = class Curation {
             payload: "CURATION_1B"
           }
         ]);
-        break;
+        break;*/
 
         /*response = Response.genQuickReply(i18n.__("curation.prompt"), [
           {
@@ -100,12 +118,12 @@ module.exports = class Curation {
 
 
         //tells user that they are correct
-      case "CURATION_1A":
-        response = Response.genText(i18n.__("curation.interview1correct"))
+      case "CURATION_PROFESSIONALLIFE":
+        response = Response.genText(i18n.__("curation.tellusaboutyourselfcorrect"))
         break;
 
 
-      case "CURATION_1B":
+      case "CURATION_PERSONALLIFE":
         response = Response.genQuickReply(i18n.__("curation.occasion"), [
           {
             title: i18n.__("curation.work"),

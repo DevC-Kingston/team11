@@ -36,10 +36,11 @@
     "title": "Summer collection 2019",
     "subtitle": "Featured outfit",
     "show": "Another look",
-    "interviewq1" : "When interviewer ask: Tell me a little about yourself, what should you describe?",
-    "interview1a" : "Professional life",
-    "interview1b" : "Personal life",
-    "interview1correct" : "Well done, that was a great answer"
+    "interviewintro" : "Let's get started. We have questions you may encounter during a job interview and provides tips on how to answer them.",
+    "tellusaboutyourself" : "When interviewer ask: Tell me a little about yourself, what should you describe?",
+    "professionallife" : "Professional life",
+    "personallife" : "Personal life",
+    "tellusaboutyourselfcorrect" : "Well done, that was a great answer"
 
 
   },
