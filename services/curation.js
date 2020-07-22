@@ -213,7 +213,7 @@ module.exports = class Curation {
               },
               {
                 title: i18n.__("curation.tellusaboutyourselfexampleno"),
-                payload: "CURATION_EYECONTACT"
+                payload: "CURATION_TELLUSYOURSELFEXAMPLENO"
               }
             ])
           ];
