@@ -87,10 +87,9 @@ module.exports = class Receive {
     ) {
       //seems genNuxMessage makes it start over
       response = Response.genNuxMessage(this.user);
-    } //seems
+    } //handlePayload choosewhich file to load or use based on listed inputs. This seems to be parsing all received text. can do some things here
+    //receive.js is using payload to coordinate what to load. if payload category repeat it stay in that flow
       else if (Number(message)) {
-        //handlePayload choosewhich file to load or use based on listed inputs. This seems to be parsing all received text. can do some things here
-        //receive.js is using payload to coordinate what to load. if payload category repeat it stay in that flow 
       response = Order.handlePayload("ORDER_NUMBER");
     } else if (message.includes("#")) {
       response = Survey.handlePayload("CSAT_SUGGESTION");

@@ -73,10 +73,10 @@ module.exports = class Curation {
         //will use for interview tips
       case "CURATION":
 
-      response = Response.genText(i18n.__("curation.interviewintro"))
+      response = Response.genText(i18n.__("curation.interviewintro"));
 
       //ask interview questions and have answer options
-        response = Response.genQuickReply(i18n.__("curation.interviewintro"), [
+        response = Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
           {
             title: i18n.__("curation.professionallife"),
             payload: "CURATION_PROFESSIONALLIFE"
@@ -119,7 +119,7 @@ module.exports = class Curation {
 
         //tells user that they are correct
       case "CURATION_PROFESSIONALLIFE":
-        response = Response.genText(i18n.__("curation.tellusaboutyourselfcorrect"))
+        response = Response.genText(i18n.__("curation.tellusaboutyourselfcorrect"));
         break;
 
 
