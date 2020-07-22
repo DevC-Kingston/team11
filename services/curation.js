@@ -42,32 +42,32 @@ module.exports = class Curation {
         ];
         break;
 
-      // case "COUPON_50":
-      //   outfit = `${this.user.gender}-${this.randomOutfit()}`;
-      //
-      //   response = [
-      //     Response.genText(i18n.__("leadgen.coupon")),
-      //     Response.genGenericTemplate(
-      //       `${config.appUrl}/styles/${outfit}.jpg`,
-      //       i18n.__("curation.title"),
-      //       i18n.__("curation.subtitle"),
-      //       [
-      //         Response.genWebUrlButton(
-      //           i18n.__("curation.shop"),
-      //           `${config.shopUrl}/products/${outfit}`
-      //         ),
-      //         Response.genPostbackButton(
-      //           i18n.__("curation.show"),
-      //           "CURATION_OTHER_STYLE"
-      //         ),
-      //         Response.genPostbackButton(
-      //           i18n.__("curation.sales"),
-      //           "CARE_SALES"
-      //         )
-      //       ]
-      //     )
-      //   ];
-      //   break;
+      case "COUPON_50":
+        outfit = `${this.user.gender}-${this.randomOutfit()}`;
+
+        response = [
+          Response.genText(i18n.__("leadgen.coupon")),
+          Response.genGenericTemplate(
+            `${config.appUrl}/styles/${outfit}.jpg`,
+            i18n.__("curation.title"),
+            i18n.__("curation.subtitle"),
+            [
+              Response.genWebUrlButton(
+                i18n.__("curation.shop"),
+                `${config.shopUrl}/products/${outfit}`
+              ),
+              Response.genPostbackButton(
+                i18n.__("curation.show"),
+                "CURATION_OTHER_STYLE"
+              ),
+              Response.genPostbackButton(
+                i18n.__("curation.sales"),
+                "CARE_SALES"
+              )
+            ]
+          )
+        ];
+        break;
 
         //can start edit here
         //will use for interview tips
@@ -76,7 +76,7 @@ module.exports = class Curation {
       response = Response.genText(i18n.__("curation.interviewintro"))
 
       //ask interview questions and have answer options
-        response = Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
+        response = Response.genQuickReply(i18n.__("curation.interviewintro"), [
           {
             title: i18n.__("curation.professionallife"),
             payload: "CURATION_PROFESSIONALLIFE"
