@@ -83,7 +83,7 @@ module.exports = class Receive {
 
     if (
       (greeting && greeting.confidence > 0.8) ||
-      message.includes("start over")
+      message.includes("start over") || message.includes("hi").toLowerCase() || message.includes("hello").toLowerCase() //might not need lower case here
     ) {
       //seems genNuxMessage makes it start over
       response = Response.genNuxMessage(this.user);
