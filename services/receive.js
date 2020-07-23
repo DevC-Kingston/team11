@@ -150,16 +150,20 @@ module.exports = class Receive {
     console.log("Received attachment:", `${attachment} for ${this.user.psid}`);
 
     response = Response.genQuickReply(i18n.__("fallback.attachment"), [
-      {
-        title: i18n.__("menu.help"),
-        payload: "CURATION_RESUME"  //change from care_help to curation_resume toget it to load resume instead
-        //payload: "CARE_HELP"
-      },
-      {
-        title: i18n.__("menu.start_over"),
-        payload: "GET_STARTED"
-      }
-    ]);
+        {
+          title: i18n.__("menu.suggestion"),
+          payload: "CURATION"
+        },
+        {
+          title: i18n.__("menu.help"),
+          payload: "CURATION_RESUME"
+        },
+        {
+          title: i18n.__("menu.job"),
+          payload: "CURATION_JOB_SUGGESTIONS"
+        }
+      ])
+    ];
 
     return response;
   }
