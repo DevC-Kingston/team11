@@ -73,7 +73,12 @@ module.exports = class Curation {
       case "CURATION":
 
       response = [
-        Response.genText(i18n.__("curation.interviewintro")),
+
+        Response.genImageTemplate(
+            `${config.appUrl}/eyecontact.jpeg`,
+            i18n.__("curation.interviewintro")
+          ),
+        //Response.genText(i18n.__("curation.interviewintro")),
 
       //ask interview questions and have answer options
         Response.genQuickReply(i18n.__("curation.tellusaboutyourself"), [
@@ -219,8 +224,10 @@ module.exports = class Curation {
           ];
             break;
 
+
+
             //taking out the regular eyecontact for template
-            /*case "c":
+            case "CURATION_EYECONTACT":
             response = [
               Response.genText(i18n.__("curation.whyworkhereexample")),
               Response.genQuickReply(i18n.__("curation.eyecontact"), [
@@ -235,9 +242,9 @@ module.exports = class Curation {
               ])
 
             ];
-              break;*/
+              break;
 
-              case "CURATION_EYECONTACT":
+              /*case "CURATION_EYECONTACT":
               response = Response.genText(i18n.__("curation.whyworkhereexample")),
               Response.genGenericTemplate(
                 `${config.appUrl}/styles/${outfit}.jpg`,
@@ -254,7 +261,7 @@ module.exports = class Curation {
                   )
                 ]
               );
-              break;
+              break;*/
 
               case "CURATION_LASTQUESTION":
               response = [
