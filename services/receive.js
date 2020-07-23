@@ -135,7 +135,7 @@ module.exports = class Receive {
     response = Response.genQuickReply(i18n.__("fallback.attachment"), [
       {
         title: i18n.__("menu.help"),
-        payload: "CURATION_RESUME"
+        payload: "CURATION_RESUME"  //change from care_help to curation_resume toget it to load resume instead
         //payload: "CARE_HELP"
       },
       {

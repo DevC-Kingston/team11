@@ -13,8 +13,8 @@
   },
   "get_started": {
     "welcome": "Hi {{userFirstName}}! Welcome to Interview Coach where you'll receive amazing tips for your interview or resume.",
-    "guidance": "At any time, use the menu below to navigate through the features",
-    "help": "How may we help?"
+    "guidance": "Use the menu below to navigate",
+    "help": "How may we help you?"
   },
   "leadgen": {
     "promo": "Hi {{userFirstName}}, finding great outfits is now easier and more convenient.",
@@ -63,14 +63,16 @@
     "resumeshortnexttip" : "Next Tip",
     "resumemeasure" : "Should you include measureable numbers?",
     "resumemeasureyes" : "If possible",
-    "resumemeasureyesno" : "No",
+    "resumemeasureno" : "No",
     "resumemeasureexplanation" : "Employers are highly responsive to measurable proven value, so if possible add numbers",
     "resumefont" : "Use a professional font. What size tho?",
     "resumefont7-9" : "7-9",
     "resumefont10-12" : "10-12",
     "resumefont13-15" : "13-15",
     "resumefontcorrect" : "Perfect answer!",
-    "resumefontwrong" : "Well, it's best to use font size 10-12 as it makes your resume more readable"
+    "resumefontwrong" : "Not really, it's best to use font size 10-12 as it makes your resume more readable",
+    "mainmenu" : "main menu",
+    "startover" : "start over",
 
 
   },
@@ -103,7 +105,7 @@
     "suggestion": "Your suggestion has been recorded for future review by the team. If this is something we need to get back to you right now just comment \"help\""
   },
   "chat_plugin": {
-    "prompt": "Thanks for visiting our store, be sure to check out all the great styles we have on the summer section."
+    "prompt": "Thanks for visiting, You'll get the best advice here."
   },
   "fallback": {
     "any": "Sorry, but I don’t recognize \"{{message}}\".",

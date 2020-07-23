@@ -246,7 +246,7 @@ module.exports = class Curation {
                   },
                   {
                     title: i18n.__("curation.startover"),
-                    payload: "CURATION_FINISH"
+                    payload: "CURATION"
                   }
                 ])
 
@@ -357,14 +357,14 @@ module.exports = class Curation {
                               },
                               {
                                 title: i18n.__("curation.startover"),
-                                payload: "CURATION_FINISH"
+                                payload: "CURATION_RESUME"
                               }
                             ])
 
                           ];
                             break;
 
-                        case "CURATION_LASTQUESTION":
+                        /*case "CURATION_LASTQUESTION":
                         response = [
                           Response.genText(i18n.__("curation.eyecontactwhy")),
                           Response.genQuickReply(i18n.__("curation.finish"), [
@@ -379,7 +379,7 @@ module.exports = class Curation {
                           ])
 
                         ];
-                          break;
+                          break;*/
 
 
 
@@ -417,11 +417,15 @@ module.exports = class Curation {
                   Response.genQuickReply(i18n.__("get_started.help"), [
                     {
                       title: i18n.__("menu.suggestion"),
-                      payload: "CURATION"
+                      payload: "CURATION" //interview
                     },
                     {
                       title: i18n.__("menu.help"),
-                      payload: "CARE_HELP"
+                      payload: "CURATION_RESUME"
+                    },
+                    {
+                      title: i18n.__("menu.job"),
+                      payload: "CURATION_JOB_SUGGESTION"
                     }
                   ])
 
