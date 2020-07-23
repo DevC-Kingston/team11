@@ -89,9 +89,9 @@ module.exports = class Receive {
       response = Response.genNuxMessage(this.user);
     } //handlePayload choosewhich file to load or use based on listed inputs. This seems to be parsing all received text. can do some things here
     //receive.js is using payload to coordinate what to load. if payload category repeat it stay in that flow
-      else if (Number(message)) {
+      /* if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
-    } else if (message.includes("menu")) {  //TRYING HERE
+    }*/ else if (message.includes("menu")) {  //let it recognize menu
       response = [
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
@@ -108,16 +108,12 @@ module.exports = class Receive {
           }
         ])
       ];
-    }
-
-
-
-    else if (message.includes("#")) {
+    }/*else if (message.includes("#")) {
       response = Survey.handlePayload("CSAT_SUGGESTION");
-    } else if (message.includes(i18n.__("care.help").toLowerCase())) {
+    }*//* else if (message.includes(i18n.__("care.help").toLowerCase())) {
       let care = new Care(this.user, this.webhookEvent);
       response = care.handlePayload("CARE_HELP");
-    } else {
+    }*/else {
       response = [
         Response.genText(
           i18n.__("fallback.any", {
