@@ -194,8 +194,7 @@ module.exports = class Receive {
     } else if (payload.includes("CURATION") || payload.includes("COUPON")) {
       let curation = new Curation(this.user, this.webhookEvent);
       response = curation.handlePayload(payload);
-    } else if (payload.includes("CURATION_RESUME")) { //tesing to see if this is making the difference
-      //else if (payload.includes("CARE")) {
+    } else if (payload.includes("CARE")) {
       let care = new Care(this.user, this.webhookEvent);
       response = care.handlePayload(payload);
     } else if (payload.includes("ORDER")) {
