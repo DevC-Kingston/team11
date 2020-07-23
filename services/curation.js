@@ -437,45 +437,715 @@ module.exports = class Curation {
                     Response.genQuickReply(i18n.__("curation.jobquestion1"), [
                       {
                         title: i18n.__("curation.jobanswer1a"),
-                        payload: "CURATION_JOBQUESTION2"
+                        payload: "CURATION_1"
                       },
                       {
                         title: i18n.__("curation.jobanswer1b"),
-                        payload: "CURATION_JOBQUESTION2"
+                        payload: "CURATION_2"
                       },
                       {
                         title: i18n.__("curation.jobanswer1c"),
-                        payload: "CURATION_JOBQUESTION2"
+                        payload: "CURATION_3"
                       }
                     ])
 
                   ];
                     break;
 
-                    //2nd
-                    case "CURATION_JOBQUESTION2":
+
+                    case "CURATION_1":
                     response = [
                       Response.genQuickReply(i18n.__("curation.jobquestion2"), [
                         {
                           title: i18n.__("curation.jobanswer2a"),
-                          payload: "CURATION_JOBQUESTION3"
+                          payload: "CURATION_1_4"
                         },
                         {
                           title: i18n.__("curation.jobanswer2b"),
-                          payload: "CURATION_JOBQUESTION3"
+                          payload: "CURATION_1_5"
                         },
                         {
                           title: i18n.__("curation.jobanswer2c"),
-                          payload: "CURATION_JOBQUESTION3"
+                          payload: "CURATION_1_6"
                         }
                       ])
 
                     ];
                       break;
 
+                      case "CURATION_1_4":
+                      response = [
+                        Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                          {
+                            title: i18n.__("curation.jobanswer3a"),
+                            payload: "CURATION_1_4_7"
+                          },
+                          {
+                            title: i18n.__("curation.jobanswer3b"),
+                            payload: "CURATION_1_4_8"
+                          },
+                          {
+                            title: i18n.__("curation.jobanswer3c"),
+                            payload: "CURATION_1_4_9"
+                          }
+                        ])
+
+                      ];
+                        break;
+
+                        case "CURATION_1_5":
+                        response = [
+                          Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                            {
+                              title: i18n.__("curation.jobanswer3a"),
+                              payload: "CURATION_1_5_7"
+                            },
+                            {
+                              title: i18n.__("curation.jobanswer3b"),
+                              payload: "CURATION_1_5_8"
+                            },
+                            {
+                              title: i18n.__("curation.jobanswer3c"),
+                              payload: "CURATION_1_5_9"
+                            }
+                          ])
+
+                        ];
+                          break;
+
+                          case "CURATION_1_6":
+                          response = [
+                            Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                              {
+                                title: i18n.__("curation.jobanswer3a"),
+                                payload: "CURATION_1_6_7"
+                              },
+                              {
+                                title: i18n.__("curation.jobanswer3b"),
+                                payload: "CURATION_1_6_8"
+                              },
+                              {
+                                title: i18n.__("curation.jobanswer3c"),
+                                payload: "CURATION_1_6_9"
+                              }
+                            ])
+
+                          ];
+                            break;
+
+                      case "CURATION_2":
+                      response = [
+                        Response.genQuickReply(i18n.__("curation.jobquestion2"), [
+                          {
+                            title: i18n.__("curation.jobanswer2a"),
+                            payload: "CURATION_2_4"
+                          },
+                          {
+                            title: i18n.__("curation.jobanswer2b"),
+                            payload: "CURATION_2_5"
+                          },
+                          {
+                            title: i18n.__("curation.jobanswer2c"),
+                            payload: "CURATION_2_6"
+                          }
+                        ])
+
+                      ];
+                        break;
+
+                        case "CURATION_2_4":
+                        response = [
+                          Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                            {
+                              title: i18n.__("curation.jobanswer3a"),
+                              payload: "CURATION_2_4_7"
+                            },
+                            {
+                              title: i18n.__("curation.jobanswer3b"),
+                              payload: "CURATION_2_4_8"
+                            },
+                            {
+                              title: i18n.__("curation.jobanswer3c"),
+                              payload: "CURATION_2_4_9"
+                            }
+                          ])
+
+                        ];
+                          break;
+
+                          case "CURATION_2_5":
+                          response = [
+                            Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                              {
+                                title: i18n.__("curation.jobanswer3a"),
+                                payload: "CURATION_2_5_7"
+                              },
+                              {
+                                title: i18n.__("curation.jobanswer3b"),
+                                payload: "CURATION_2_5_8"
+                              },
+                              {
+                                title: i18n.__("curation.jobanswer3c"),
+                                payload: "CURATION_2_5_9"
+                              }
+                            ])
+
+                          ];
+                            break;
+
+                            case "CURATION_2_6":
+                            response = [
+                              Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                                {
+                                  title: i18n.__("curation.jobanswer3a"),
+                                  payload: "CURATION_2_6_7"
+                                },
+                                {
+                                  title: i18n.__("curation.jobanswer3b"),
+                                  payload: "CURATION_2_6_8"
+                                },
+                                {
+                                  title: i18n.__("curation.jobanswer3c"),
+                                  payload: "CURATION_2_6_9"
+                                }
+                              ])
+
+                            ];
+                              break;
+
+                        case "CURATION_3":
+                        response = [
+                          Response.genQuickReply(i18n.__("curation.jobquestion2"), [
+                            {
+                              title: i18n.__("curation.jobanswer2a"),
+                              payload: "CURATION_3_4"
+                            },
+                            {
+                              title: i18n.__("curation.jobanswer2b"),
+                              payload: "CURATION_3_5"
+                            },
+                            {
+                              title: i18n.__("curation.jobanswer2c"),
+                              payload: "CURATION_3_6"
+                            }
+                          ])
+
+                        ];
+                          break;
+
+                          case "CURATION_3_4":
+                          response = [
+                            Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                              {
+                                title: i18n.__("curation.jobanswer3a"),
+                                payload: "CURATION_3_4_7"
+                              },
+                              {
+                                title: i18n.__("curation.jobanswer3b"),
+                                payload: "CURATION_3_4_8"
+                              },
+                              {
+                                title: i18n.__("curation.jobanswer3c"),
+                                payload: "CURATION_3_4_9"
+                              }
+                            ])
+
+                          ];
+                            break;
+
+                            case "CURATION_3_5":
+                            response = [
+                              Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                                {
+                                  title: i18n.__("curation.jobanswer3a"),
+                                  payload: "CURATION_3_5_7"
+                                },
+                                {
+                                  title: i18n.__("curation.jobanswer3b"),
+                                  payload: "CURATION_3_5_8"
+                                },
+                                {
+                                  title: i18n.__("curation.jobanswer3c"),
+                                  payload: "CURATION_3_5_9"
+                                }
+                              ])
+
+                            ];
+                              break;
+
+                              case "CURATION_3_6":
+                              response = [
+                                Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                                  {
+                                    title: i18n.__("curation.jobanswer3a"),
+                                    payload: "CURATION_3_6_7"
+                                  },
+                                  {
+                                    title: i18n.__("curation.jobanswer3b"),
+                                    payload: "CURATION_3_6_8"
+                                  },
+                                  {
+                                    title: i18n.__("curation.jobanswer3c"),
+                                    payload: "CURATION_3_6_9"
+                                  }
+                                ])
+
+                              ];
+                                break;
+
+
+
+
+
+
+
+
+                                //result of selection
+                                case "CURATION_1_4_7":
+                                response = [
+                                  Response.genText(i18n.__("curation.jobresult147")),
+                                  Response.genQuickReply(i18n.__("curation.finish"), [
+                                    {
+                                      title: i18n.__("curation.mainmenu"),
+                                      payload: "CURATION_FINISH"
+                                    },
+                                    {
+                                      title: i18n.__("curation.startover"),
+                                      payload: "CURATION"
+                                    }
+                                  ])
+
+                                ];
+                                  break;
+
+                                  case "CURATION_1_4_8":
+                                  response = [
+                                    Response.genText(i18n.__("curation.jobresult148")),
+                                    Response.genQuickReply(i18n.__("curation.finish"), [
+                                      {
+                                        title: i18n.__("curation.mainmenu"),
+                                        payload: "CURATION_FINISH"
+                                      },
+                                      {
+                                        title: i18n.__("curation.startover"),
+                                        payload: "CURATION"
+                                      }
+                                    ])
+
+                                  ];
+                                    break;
+
+                                    case "CURATION_1_4_9":
+                                    response = [
+                                      Response.genText(i18n.__("curation.jobresult149")),
+                                      Response.genQuickReply(i18n.__("curation.finish"), [
+                                        {
+                                          title: i18n.__("curation.mainmenu"),
+                                          payload: "CURATION_FINISH"
+                                        },
+                                        {
+                                          title: i18n.__("curation.startover"),
+                                          payload: "CURATION"
+                                        }
+                                      ])
+
+                                    ];
+                                      break;
+
+                                      case "CURATION_1_5_7":
+                                      response = [
+                                        Response.genText(i18n.__("curation.jobresult157")),
+                                        Response.genQuickReply(i18n.__("curation.finish"), [
+                                          {
+                                            title: i18n.__("curation.mainmenu"),
+                                            payload: "CURATION_FINISH"
+                                          },
+                                          {
+                                            title: i18n.__("curation.startover"),
+                                            payload: "CURATION"
+                                          }
+                                        ])
+
+                                      ];
+                                        break;
+
+                                        case "CURATION_1_5_8":
+                                        response = [
+                                          Response.genText(i18n.__("curation.jobresult158")),
+                                          Response.genQuickReply(i18n.__("curation.finish"), [
+                                            {
+                                              title: i18n.__("curation.mainmenu"),
+                                              payload: "CURATION_FINISH"
+                                            },
+                                            {
+                                              title: i18n.__("curation.startover"),
+                                              payload: "CURATION"
+                                            }
+                                          ])
+
+                                        ];
+                                          break;
+
+                                          case "CURATION_1_5_9":
+                                          response = [
+                                            Response.genText(i18n.__("curation.jobresult159")),
+                                            Response.genQuickReply(i18n.__("curation.finish"), [
+                                              {
+                                                title: i18n.__("curation.mainmenu"),
+                                                payload: "CURATION_FINISH"
+                                              },
+                                              {
+                                                title: i18n.__("curation.startover"),
+                                                payload: "CURATION"
+                                              }
+                                            ])
+
+                                          ];
+                                            break;
+
+                                            case "CURATION_1_6_7":
+                                            response = [
+                                              Response.genText(i18n.__("curation.jobresult167")),
+                                              Response.genQuickReply(i18n.__("curation.finish"), [
+                                                {
+                                                  title: i18n.__("curation.mainmenu"),
+                                                  payload: "CURATION_FINISH"
+                                                },
+                                                {
+                                                  title: i18n.__("curation.startover"),
+                                                  payload: "CURATION"
+                                                }
+                                              ])
+
+                                            ];
+                                              break;
+
+                                              case "CURATION_1_6_8":
+                                              response = [
+                                                Response.genText(i18n.__("curation.jobresult168")),
+                                                Response.genQuickReply(i18n.__("curation.finish"), [
+                                                  {
+                                                    title: i18n.__("curation.mainmenu"),
+                                                    payload: "CURATION_FINISH"
+                                                  },
+                                                  {
+                                                    title: i18n.__("curation.startover"),
+                                                    payload: "CURATION"
+                                                  }
+                                                ])
+
+                                              ];
+                                                break;
+
+                                                case "CURATION_1_6_9":
+                                                response = [
+                                                  Response.genText(i18n.__("curation.jobresult169")),
+                                                  Response.genQuickReply(i18n.__("curation.finish"), [
+                                                    {
+                                                      title: i18n.__("curation.mainmenu"),
+                                                      payload: "CURATION_FINISH"
+                                                    },
+                                                    {
+                                                      title: i18n.__("curation.startover"),
+                                                      payload: "CURATION"
+                                                    }
+                                                  ])
+
+                                                ];
+                                                  break;
+
+                                                  case "CURATION_2_4_7":
+                                                  response = [
+                                                    Response.genText(i18n.__("curation.jobresult247")),
+                                                    Response.genQuickReply(i18n.__("curation.finish"), [
+                                                      {
+                                                        title: i18n.__("curation.mainmenu"),
+                                                        payload: "CURATION_FINISH"
+                                                      },
+                                                      {
+                                                        title: i18n.__("curation.startover"),
+                                                        payload: "CURATION"
+                                                      }
+                                                    ])
+
+                                                  ];
+                                                    break;
+
+                                                    case "CURATION_2_4_8":
+                                                    response = [
+                                                      Response.genText(i18n.__("curation.jobresult248")),
+                                                      Response.genQuickReply(i18n.__("curation.finish"), [
+                                                        {
+                                                          title: i18n.__("curation.mainmenu"),
+                                                          payload: "CURATION_FINISH"
+                                                        },
+                                                        {
+                                                          title: i18n.__("curation.startover"),
+                                                          payload: "CURATION"
+                                                        }
+                                                      ])
+
+                                                    ];
+                                                      break;
+
+                                                      case "CURATION_2_4_9":
+                                                      response = [
+                                                        Response.genText(i18n.__("curation.jobresult249")),
+                                                        Response.genQuickReply(i18n.__("curation.finish"), [
+                                                          {
+                                                            title: i18n.__("curation.mainmenu"),
+                                                            payload: "CURATION_FINISH"
+                                                          },
+                                                          {
+                                                            title: i18n.__("curation.startover"),
+                                                            payload: "CURATION"
+                                                          }
+                                                        ])
+
+                                                      ];
+                                                        break;
+
+                                                        case "CURATION_2_5_7":
+                                                        response = [
+                                                          Response.genText(i18n.__("curation.jobresult257")),
+                                                          Response.genQuickReply(i18n.__("curation.finish"), [
+                                                            {
+                                                              title: i18n.__("curation.mainmenu"),
+                                                              payload: "CURATION_FINISH"
+                                                            },
+                                                            {
+                                                              title: i18n.__("curation.startover"),
+                                                              payload: "CURATION"
+                                                            }
+                                                          ])
+
+                                                        ];
+                                                          break;
+
+                                                          case "CURATION_2_5_8":
+                                                          response = [
+                                                            Response.genText(i18n.__("curation.jobresult258")),
+                                                            Response.genQuickReply(i18n.__("curation.finish"), [
+                                                              {
+                                                                title: i18n.__("curation.mainmenu"),
+                                                                payload: "CURATION_FINISH"
+                                                              },
+                                                              {
+                                                                title: i18n.__("curation.startover"),
+                                                                payload: "CURATION"
+                                                              }
+                                                            ])
+
+                                                          ];
+                                                            break;
+
+                                                            case "CURATION_2_5_9":
+                                                            response = [
+                                                              Response.genText(i18n.__("curation.jobresult259")),
+                                                              Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                {
+                                                                  title: i18n.__("curation.mainmenu"),
+                                                                  payload: "CURATION_FINISH"
+                                                                },
+                                                                {
+                                                                  title: i18n.__("curation.startover"),
+                                                                  payload: "CURATION"
+                                                                }
+                                                              ])
+
+                                                            ];
+                                                              break;
+
+                                                              case "CURATION_2_6_7":
+                                                              response = [
+                                                                Response.genText(i18n.__("curation.jobresult267")),
+                                                                Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                  {
+                                                                    title: i18n.__("curation.mainmenu"),
+                                                                    payload: "CURATION_FINISH"
+                                                                  },
+                                                                  {
+                                                                    title: i18n.__("curation.startover"),
+                                                                    payload: "CURATION"
+                                                                  }
+                                                                ])
+
+                                                              ];
+                                                                break;
+
+                                                                case "CURATION_2_6_8":
+                                                                response = [
+                                                                  Response.genText(i18n.__("curation.jobresult268")),
+                                                                  Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                    {
+                                                                      title: i18n.__("curation.mainmenu"),
+                                                                      payload: "CURATION_FINISH"
+                                                                    },
+                                                                    {
+                                                                      title: i18n.__("curation.startover"),
+                                                                      payload: "CURATION"
+                                                                    }
+                                                                  ])
+
+                                                                ];
+                                                                  break;
+
+                                                                  case "CURATION_2_6_9":
+                                                                  response = [
+                                                                    Response.genText(i18n.__("curation.jobresult269")),
+                                                                    Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                      {
+                                                                        title: i18n.__("curation.mainmenu"),
+                                                                        payload: "CURATION_FINISH"
+                                                                      },
+                                                                      {
+                                                                        title: i18n.__("curation.startover"),
+                                                                        payload: "CURATION"
+                                                                      }
+                                                                    ])
+
+                                                                  ];
+                                                                    break;
+
+                                                                    case "CURATION_3_4_7":
+                                                                    response = [
+                                                                      Response.genText(i18n.__("curation.jobresult347")),
+                                                                      Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                        {
+                                                                          title: i18n.__("curation.mainmenu"),
+                                                                          payload: "CURATION_FINISH"
+                                                                        },
+                                                                        {
+                                                                          title: i18n.__("curation.startover"),
+                                                                          payload: "CURATION"
+                                                                        }
+                                                                      ])
+
+                                                                    ];
+                                                                      break;
+
+                                                                      case "CURATION_3_4_8":
+                                                                      response = [
+                                                                        Response.genText(i18n.__("curation.jobresult348")),
+                                                                        Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                          {
+                                                                            title: i18n.__("curation.mainmenu"),
+                                                                            payload: "CURATION_FINISH"
+                                                                          },
+                                                                          {
+                                                                            title: i18n.__("curation.startover"),
+                                                                            payload: "CURATION"
+                                                                          }
+                                                                        ])
+
+                                                                      ];
+                                                                        break;
+
+                                                                        case "CURATION_3_4_9":
+                                                                        response = [
+                                                                          Response.genText(i18n.__("curation.jobresult349")),
+                                                                          Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                            {
+                                                                              title: i18n.__("curation.mainmenu"),
+                                                                              payload: "CURATION_FINISH"
+                                                                            },
+                                                                            {
+                                                                              title: i18n.__("curation.startover"),
+                                                                              payload: "CURATION"
+                                                                            }
+                                                                          ])
+
+                                                                        ];
+                                                                          break;
+
+                                                                          case "CURATION_3_5_7":
+                                                                          response = [
+                                                                            Response.genText(i18n.__("curation.jobresult357")),
+                                                                            Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                              {
+                                                                                title: i18n.__("curation.mainmenu"),
+                                                                                payload: "CURATION_FINISH"
+                                                                              },
+                                                                              {
+                                                                                title: i18n.__("curation.startover"),
+                                                                                payload: "CURATION"
+                                                                              }
+                                                                            ])
+
+                                                                          ];
+                                                                            break;
+
+                                                                            case "CURATION_3_5_8":
+                                                                            response = [
+                                                                              Response.genText(i18n.__("curation.jobresult358")),
+                                                                              Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                                {
+                                                                                  title: i18n.__("curation.mainmenu"),
+                                                                                  payload: "CURATION_FINISH"
+                                                                                },
+                                                                                {
+                                                                                  title: i18n.__("curation.startover"),
+                                                                                  payload: "CURATION"
+                                                                                }
+                                                                              ])
+
+                                                                            ];
+                                                                              break;
+
+                                                                              case "CURATION_3_5_9":
+                                                                              response = [
+                                                                                Response.genText(i18n.__("curation.jobresult359")),
+                                                                                Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                                  {
+                                                                                    title: i18n.__("curation.mainmenu"),
+                                                                                    payload: "CURATION_FINISH"
+                                                                                  },
+                                                                                  {
+                                                                                    title: i18n.__("curation.startover"),
+                                                                                    payload: "CURATION"
+                                                                                  }
+                                                                                ])
+
+                                                                              ];
+                                                                                break;
+
+                                                                                case "CURATION_3_6_7":
+                                                                                response = [
+                                                                                  Response.genText(i18n.__("curation.jobresult367")),
+                                                                                  Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                                    {
+                                                                                      title: i18n.__("curation.mainmenu"),
+                                                                                      payload: "CURATION_FINISH"
+                                                                                    },
+                                                                                    {
+                                                                                      title: i18n.__("curation.startover"),
+                                                                                      payload: "CURATION"
+                                                                                    }
+                                                                                  ])
+
+                                                                                ];
+                                                                                  break;
+
+                                                                                  case "CURATION_3_6_8":
+                                                                                  response = [
+                                                                                    Response.genText(i18n.__("curation.jobresult369")),
+                                                                                    Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                                      {
+                                                                                        title: i18n.__("curation.mainmenu"),
+                                                                                        payload: "CURATION_FINISH"
+                                                                                      },
+                                                                                      {
+                                                                                        title: i18n.__("curation.startover"),
+                                                                                        payload: "CURATION"
+                                                                                      }
+                                                                                    ])
+
+                                                                                  ];
+                                                                                    break;
+
 
                       //3rd set
-                      case "CURATION_JOBQUESTION3":
+                      /*case "CURATION_JOBQUESTION3":
                       response = [
                         Response.genQuickReply(i18n.__("curation.jobquestion3"), [
                           {
@@ -493,7 +1163,7 @@ module.exports = class Curation {
                         ])
 
                       ];
-                        break;
+                        break;*/
 
 
 
