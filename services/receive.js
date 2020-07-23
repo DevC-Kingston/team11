@@ -208,7 +208,8 @@ module.exports = class Receive {
         Response.genText(i18n.__("get_started.guidance")),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
-            title: i18n.__("care.order"),
+            title: i18n.__("care.end"), //put just to test
+            //title: i18n.__("care.order"),
             payload: "CARE_ORDER"
           },
           {
