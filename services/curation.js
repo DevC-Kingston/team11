@@ -1314,7 +1314,7 @@ module.exports = class Curation {
                     },
                     {
                       title: i18n.__("menu.job"),
-                      payload: "CURATION_JOB_SUGGESTION"
+                      payload: "CURATION_JOB_SUGGESTIONS"
                     }
                   ])
 
