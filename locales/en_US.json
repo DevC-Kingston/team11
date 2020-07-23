@@ -13,7 +13,7 @@
   },
   "get_started": {
     "welcome": "Hi {{userFirstName}}! I'm Kingsley, I'll be giving you amazing tips for your interview or resume.",
-    "guidance": "Use the menu below to navigate",
+    "guidance": "Use the menu below to navigate \uD83D\uDE00",
     "help": "How may I help you?"
   },
   "leadgen": {
@@ -37,7 +37,7 @@
     "title": "Summer collection 2019",
     "subtitle": "Featured outfit",
     "show": "Another look",
-    "interviewintro" : "Let's get started. We have questions you may encounter during a job interview and provide tips on how to answer them",
+    "interviewintro" : "Let's get started on questions you may encounter in an interview and tips to answer them",
     "tellusaboutyourself" : "When interviewer ask: Tell me a little about yourself, what should you describe?",
     "professionallife" : "Professional life",
     "personallife" : "Personal life",
@@ -54,7 +54,7 @@
     "eyecontact" : "Should you maintain good eye contact?",
     "eyecontactyes" : "yes",
     "eyecontactno" : "no",
-    "eyecontactwhy" : "You should, the eyes acts as a window to your interest level, confidence and professionalism during an interview",
+    "eyecontactwhy" : "You should, the eyes acts as a window to your interest level and confidence",
     "finish" : "That was some good practice!",
     "resumeintro" : "Let's jump right into some tips",
     "resumeshort" : "Make your resume simple and easy to read.",
