@@ -135,7 +135,8 @@ module.exports = class Receive {
     response = Response.genQuickReply(i18n.__("fallback.attachment"), [
       {
         title: i18n.__("menu.help"),
-        payload: "CARE_HELP"
+        payload: "CURATION_RESUME"
+        //payload: "CARE_HELP"
       },
       {
         title: i18n.__("menu.start_over"),
