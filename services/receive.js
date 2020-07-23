@@ -95,7 +95,8 @@ module.exports = class Receive {
       response = Survey.handlePayload("CSAT_SUGGESTION");
     } else if (message.includes(i18n.__("care.help").toLowerCase())) {
       let care = new Care(this.user, this.webhookEvent);
-      response = care.handlePayload("CARE_HELP");
+      response = care.handlePayload("CURATION_RESUME");
+      //response = care.handlePayload("CARE_HELP");
     } else {
       response = [
         Response.genText(
@@ -208,8 +209,7 @@ module.exports = class Receive {
         Response.genText(i18n.__("get_started.guidance")),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
-            title: i18n.__("care.end"), //put just to test
-            //title: i18n.__("care.order"),
+            title: i18n.__("care.order"),
             payload: "CARE_ORDER"
           },
           {
