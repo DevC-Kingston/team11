@@ -47,7 +47,7 @@
     "tellusaboutyourselfexampleyes" : "yes",
     "tellusaboutyourselfexampleno" : "no",
     "tellusaboutyourselfexample" : "Start out with an overview of your current position, then provide relevant highlights that make you qualified for the role",
-    "whyworkhere" : "When the interviewer asks why you want to work for them ",
+    "whyworkhere" : "When the interviewer asks why you want to work for them",
     "whyworkhereappealing" : "appealing",
     "whyworkherereviews" : "Positive views",
     "whyworkhereexample" : "Both options were actually correct. Prepare for this question by doing your homework and mentinoning the appealing aspects in your answer.",
@@ -55,7 +55,7 @@
     "eyecontactyes" : "yes",
     "eyecontactno" : "no",
     "eyecontactwhy" : "You should, the eyes acts as a window to your interest level and confidence",
-    "finish" : "That was some good practice! \uD83D\uDE00	",
+    "finish" : "That was some good practice!",
     "resumeintro" : "Let's jump right into some tips",
     "resumeshort" : "Make your resume simple and easy to read.",
     "resumeshortexplanation" : "It makes it easier for employers, it's more inviting to read",
@@ -70,7 +70,7 @@
     "resumefont10-12" : "10-12",
     "resumefont13-15" : "13-15",
     "resumefontcorrect" : "Perfect answer!",
-    "resumefontwrong" : "Not really, it's best to use font size 10-12 as it makes your resume more readable	",
+    "resumefontwrong" : "Not really, it's best to use font size 10-12 as it makes your resume more readable",
     "mainmenu" : "main menu",
     "startover" : "start over"
 
