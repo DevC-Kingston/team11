@@ -92,7 +92,22 @@ module.exports = class Receive {
       else if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
     } else if (message.includes("menu")) {  //TRYING HERE
-      response = Curation.handlePayload("CURATION_FINISH");
+      response = [
+        Response.genQuickReply(i18n.__("get_started.help"), [
+          {
+            title: i18n.__("menu.suggestion"),
+            payload: "CURATION"
+          },
+          {
+            title: i18n.__("menu.help"),
+            payload: "CURATION_RESUME"
+          },
+          {
+            title: i18n.__("menu.job"),
+            payload: "CURATION_JOB_SUGGESTIONS"
+          }
+        ])
+      ];
     }
 
 
