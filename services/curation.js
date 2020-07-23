@@ -426,23 +426,74 @@ module.exports = class Curation {
 
 
                   //**************************JOB SUGGESTIONS********************
-
+                  //1st set
                   case "CURATION_JOB_SUGGESTIONS":
                   response = [
-                    Response.genText(i18n.__("curation.eyecontactwhy")),
-                    Response.genQuickReply(i18n.__("curation.finish"), [
+                    Response.genImageTemplate(
+                        `${config.appUrl}/careertypes.jpg`,
+                        i18n.__("curation.jobsuggestionintro")
+                      ),
+                      Response.genText(i18n.__("curation.jobsuggestioninstruction")),
+                    Response.genQuickReply(i18n.__("curation.jobquestion1"), [
                       {
-                        title: i18n.__("curation.mainmenu"),
-                        payload: "CURATION_FINISH"
+                        title: i18n.__("curation.jobanswer1a"),
+                        payload: "CURATION_JOBQUESTION2"
                       },
                       {
-                        title: i18n.__("curation.startover"),
-                        payload: "CURATION_FINISH"
+                        title: i18n.__("curation.jobanswer1b"),
+                        payload: "CURATION_JOBQUESTION2"
+                      },
+                      {
+                        title: i18n.__("curation.jobanswer1c"),
+                        payload: "CURATION_JOBQUESTION2"
                       }
                     ])
 
                   ];
                     break;
+
+                    //2nd
+                    case "CURATION_JOBQUESTION2":
+                    response = [
+                      Response.genQuickReply(i18n.__("curation.jobquestion2"), [
+                        {
+                          title: i18n.__("curation.jobanswer2a"),
+                          payload: "CURATION_JOBQUESTION3"
+                        },
+                        {
+                          title: i18n.__("curation.jobanswer2b"),
+                          payload: "CURATION_JOBQUESTION3"
+                        },
+                        {
+                          title: i18n.__("curation.jobanswer2c"),
+                          payload: "CURATION_JOBQUESTION3"
+                        }
+                      ])
+
+                    ];
+                      break;
+
+
+                      //3rd set
+                      case "CURATION_JOBQUESTION3":
+                      response = [
+                        Response.genQuickReply(i18n.__("curation.jobquestion3"), [
+                          {
+                            title: i18n.__("curation.jobanswer3a"),
+                            payload: "CURATION_RESULT"
+                          },
+                          {
+                            title: i18n.__("curation.jobanswer3b"),
+                            payload: "CURATION_RESULT"
+                          },
+                          {
+                            title: i18n.__("curation.jobanswer3c"),
+                            payload: "CURATION_RESULT"
+                          }
+                        ])
+
+                      ];
+                        break;
 
 
 

@@ -72,7 +72,21 @@
     "resumefontcorrect" : "Perfect answer! \uD83D\uDE00 \uD83D\uDE00",
     "resumefontwrong" : "\uD83D\uDE27 Not really, it's best to use font size 10-12 as it makes your resume more readable",
     "mainmenu" : "main menu",
-    "startover" : "start over"
+    "startover" : "start over",
+    "jobsuggestionintro" : "Let us help you decide which career is best for you",
+    "jobsuggestioninstruction" : "Answere these quick questions to know",
+    "jobquestion1" : "Which best describes you?",
+    "jobquestion2" : "Which you rather most",
+    "jobquestion3" : "Which you prefer",
+    "jobanswer1a" : "like to use hands",
+    "jobanswer1b" : "like offices",
+    "jobanswer1c" : "rather outdoor",
+    "jobanswer2a" : "think about future",
+    "jobanswer2b" : "live in the moment",
+    "jobanswer2c" : "reminisce on past",
+    "jobanswer3a" : "working alone",
+    "jobanswer3b" : "working with others",
+    "jobanswer3c" : "bit of both"
 
 
   },
