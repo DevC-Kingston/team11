@@ -150,7 +150,7 @@ module.exports = class Profile {
 
     let localizedMenu = {
       locale: param,
-      composer_input_disabled: false,
+      composer_input_disabled: false, //this part disable input maybe?
       call_to_actions: [
         {
           title: i18n.__("menu.support"),

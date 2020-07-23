@@ -711,7 +711,7 @@ module.exports = class Curation {
                                     },
                                     {
                                       title: i18n.__("curation.startover"),
-                                      payload: "CURATION"
+                                      payload: "CURATION_JOB_SUGGESTIONS"
                                     }
                                   ])
 
@@ -728,7 +728,7 @@ module.exports = class Curation {
                                       },
                                       {
                                         title: i18n.__("curation.startover"),
-                                        payload: "CURATION"
+                                        payload: "CURATION_JOB_SUGGESTIONS"
                                       }
                                     ])
 
@@ -745,7 +745,7 @@ module.exports = class Curation {
                                         },
                                         {
                                           title: i18n.__("curation.startover"),
-                                          payload: "CURATION"
+                                          payload: "CURATION_JOB_SUGGESTIONS"
                                         }
                                       ])
 
@@ -762,7 +762,7 @@ module.exports = class Curation {
                                           },
                                           {
                                             title: i18n.__("curation.startover"),
-                                            payload: "CURATION"
+                                            payload: "CURATION_JOB_SUGGESTIONS"
                                           }
                                         ])
 
@@ -779,7 +779,7 @@ module.exports = class Curation {
                                             },
                                             {
                                               title: i18n.__("curation.startover"),
-                                              payload: "CURATION"
+                                              payload: "CURATION_JOB_SUGGESTIONS"
                                             }
                                           ])
 
@@ -796,7 +796,7 @@ module.exports = class Curation {
                                               },
                                               {
                                                 title: i18n.__("curation.startover"),
-                                                payload: "CURATION"
+                                                payload: "CURATION_JOB_SUGGESTIONS"
                                               }
                                             ])
 
@@ -813,7 +813,7 @@ module.exports = class Curation {
                                                 },
                                                 {
                                                   title: i18n.__("curation.startover"),
-                                                  payload: "CURATION"
+                                                  payload: "CURATION_JOB_SUGGESTIONS"
                                                 }
                                               ])
 
@@ -830,7 +830,7 @@ module.exports = class Curation {
                                                   },
                                                   {
                                                     title: i18n.__("curation.startover"),
-                                                    payload: "CURATION"
+                                                    payload: "CURATION_JOB_SUGGESTIONS"
                                                   }
                                                 ])
 
@@ -847,7 +847,7 @@ module.exports = class Curation {
                                                     },
                                                     {
                                                       title: i18n.__("curation.startover"),
-                                                      payload: "CURATION"
+                                                      payload: "CURATION_JOB_SUGGESTIONS"
                                                     }
                                                   ])
 
@@ -864,7 +864,7 @@ module.exports = class Curation {
                                                       },
                                                       {
                                                         title: i18n.__("curation.startover"),
-                                                        payload: "CURATION"
+                                                        payload: "CURATION_JOB_SUGGESTIONS"
                                                       }
                                                     ])
 
@@ -881,7 +881,7 @@ module.exports = class Curation {
                                                         },
                                                         {
                                                           title: i18n.__("curation.startover"),
-                                                          payload: "CURATION"
+                                                          payload: "CURATION_JOB_SUGGESTIONS"
                                                         }
                                                       ])
 
@@ -898,7 +898,7 @@ module.exports = class Curation {
                                                           },
                                                           {
                                                             title: i18n.__("curation.startover"),
-                                                            payload: "CURATION"
+                                                            payload: "CURATION_JOB_SUGGESTIONS"
                                                           }
                                                         ])
 
@@ -915,7 +915,7 @@ module.exports = class Curation {
                                                             },
                                                             {
                                                               title: i18n.__("curation.startover"),
-                                                              payload: "CURATION"
+                                                              payload: "CURATION_JOB_SUGGESTIONS"
                                                             }
                                                           ])
 
@@ -932,7 +932,7 @@ module.exports = class Curation {
                                                               },
                                                               {
                                                                 title: i18n.__("curation.startover"),
-                                                                payload: "CURATION"
+                                                                payload: "CURATION_JOB_SUGGESTIONS"
                                                               }
                                                             ])
 
@@ -949,7 +949,7 @@ module.exports = class Curation {
                                                                 },
                                                                 {
                                                                   title: i18n.__("curation.startover"),
-                                                                  payload: "CURATION"
+                                                                  payload: "CURATION_JOB_SUGGESTIONS"
                                                                 }
                                                               ])
 
@@ -966,7 +966,7 @@ module.exports = class Curation {
                                                                   },
                                                                   {
                                                                     title: i18n.__("curation.startover"),
-                                                                    payload: "CURATION"
+                                                                    payload: "CURATION_JOB_SUGGESTIONS"
                                                                   }
                                                                 ])
 
@@ -983,7 +983,7 @@ module.exports = class Curation {
                                                                     },
                                                                     {
                                                                       title: i18n.__("curation.startover"),
-                                                                      payload: "CURATION"
+                                                                      payload: "CURATION_JOB_SUGGESTIONS"
                                                                     }
                                                                   ])
 
@@ -1000,7 +1000,7 @@ module.exports = class Curation {
                                                                       },
                                                                       {
                                                                         title: i18n.__("curation.startover"),
-                                                                        payload: "CURATION"
+                                                                        payload: "CURATION_JOB_SUGGESTIONS"
                                                                       }
                                                                     ])
 
@@ -1017,7 +1017,7 @@ module.exports = class Curation {
                                                                         },
                                                                         {
                                                                           title: i18n.__("curation.startover"),
-                                                                          payload: "CURATION"
+                                                                          payload: "CURATION_JOB_SUGGESTIONS"
                                                                         }
                                                                       ])
 
@@ -1034,7 +1034,7 @@ module.exports = class Curation {
                                                                           },
                                                                           {
                                                                             title: i18n.__("curation.startover"),
-                                                                            payload: "CURATION"
+                                                                            payload: "CURATION_JOB_SUGGESTIONS"
                                                                           }
                                                                         ])
 
@@ -1051,7 +1051,7 @@ module.exports = class Curation {
                                                                             },
                                                                             {
                                                                               title: i18n.__("curation.startover"),
-                                                                              payload: "CURATION"
+                                                                              payload: "CURATION_JOB_SUGGESTIONS"
                                                                             }
                                                                           ])
 
@@ -1068,7 +1068,7 @@ module.exports = class Curation {
                                                                               },
                                                                               {
                                                                                 title: i18n.__("curation.startover"),
-                                                                                payload: "CURATION"
+                                                                                payload: "CURATION_JOB_SUGGESTIONS"
                                                                               }
                                                                             ])
 
@@ -1085,7 +1085,7 @@ module.exports = class Curation {
                                                                                 },
                                                                                 {
                                                                                   title: i18n.__("curation.startover"),
-                                                                                  payload: "CURATION"
+                                                                                  payload: "CURATION_JOB_SUGGESTIONS"
                                                                                 }
                                                                               ])
 
@@ -1102,7 +1102,7 @@ module.exports = class Curation {
                                                                                   },
                                                                                   {
                                                                                     title: i18n.__("curation.startover"),
-                                                                                    payload: "CURATION"
+                                                                                    payload: "CURATION_JOB_SUGGESTIONS"
                                                                                   }
                                                                                 ])
 
@@ -1119,7 +1119,7 @@ module.exports = class Curation {
                                                                                     },
                                                                                     {
                                                                                       title: i18n.__("curation.startover"),
-                                                                                      payload: "CURATION"
+                                                                                      payload: "CURATION_JOB_SUGGESTIONS"
                                                                                     }
                                                                                   ])
 
@@ -1136,7 +1136,7 @@ module.exports = class Curation {
                                                                                       },
                                                                                       {
                                                                                         title: i18n.__("curation.startover"),
-                                                                                        payload: "CURATION"
+                                                                                        payload: "CURATION_JOB_SUGGESTIONS"
                                                                                       }
                                                                                     ])
 
