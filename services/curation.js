@@ -220,7 +220,7 @@ module.exports = class Curation {
             break;
 
             //taking out the regular eyecontact for template
-            /*case "CURATION_EYECONTACT":
+            /*case "c":
             response = [
               Response.genText(i18n.__("curation.whyworkhereexample")),
               Response.genQuickReply(i18n.__("curation.eyecontact"), [
@@ -237,7 +237,7 @@ module.exports = class Curation {
             ];
               break;*/
 
-              case "CURATION_LASTQUESTION":
+              case "CURATION_EYECONTACT":
               response = Response.genText(i18n.__("curation.whyworkhereexample")),
               Response.genGenericTemplate(
                 `${config.appUrl}/styles/${outfit}.jpg`,
