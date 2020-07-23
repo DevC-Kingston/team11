@@ -75,7 +75,7 @@ module.exports = class Curation {
       response = [
 
         Response.genImageTemplate(
-            `${config.appUrl}/eyecontact.jpeg`,
+            `${config.appUrl}/success.jpg`,
             i18n.__("curation.interviewintro")
           ),
         //Response.genText(i18n.__("curation.interviewintro")),
@@ -265,7 +265,12 @@ module.exports = class Curation {
 
               case "CURATION_LASTQUESTION":
               response = [
-                Response.genText(i18n.__("curation.eyecontactwhy")),
+
+                Response.genImageTemplate(
+                    `${config.appUrl}/eyecontact.jpg`,
+                    i18n.__("curation.eyecontactwhy")
+                  ),
+                //Response.genText(i18n.__("curation.eyecontactwhy")),  //added in template to show image instead
                 Response.genQuickReply(i18n.__("curation.finish"), [
                   {
                     title: i18n.__("curation.mainmenu"),
