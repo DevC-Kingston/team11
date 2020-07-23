@@ -11,7 +11,7 @@ Unemployment has been a pressing issue not just in Jamaica but across the world.
 
 ## What it does
 
-This Chatbot has been designed with the aim to assist/coach interested individuals on how to conduct themselves in an interview setting. It leads the user through a series of questions which are typically asked in a interview and suggest possible answers to those questions along with providing the user with any necessary correction if they do not answer correctly. This chatbot also gives resume tips and ideas to help the user to feel more comfortable going into their job interview.
+This Chatbot has been designed with the aim to assist/coach interested individuals on how to conduct themselves in an interview setting, give them valuable tips with a resume ane helps with job suggestions. All the job needs in one comprehensive chatbot. It leads the user through a series of questions which are typically asked in a interview and suggest possible answers to those questions along with providing the user with any necessary correction if they do not answer correctly. This chatbot also gives resume tips and ideas to help the user to feel more comfortable going into their job interview.
 
 ## List your Chatbot’s features and use cases
 
