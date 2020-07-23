@@ -93,10 +93,10 @@ module.exports = class Receive {
       response = Order.handlePayload("ORDER_NUMBER");
     } else if (message.includes("#")) {
       response = Survey.handlePayload("CSAT_SUGGESTION");
-    } /*else if (message.includes(i18n.__("care.help").toLowerCase())) {
+    } else if (message.includes(i18n.__("care.help").toLowerCase())) {
       let care = new Care(this.user, this.webhookEvent);
       response = care.handlePayload("CARE_HELP");
-    }*/ else {
+    } else {
       response = [
         Response.genText(
           i18n.__("fallback.any", {
