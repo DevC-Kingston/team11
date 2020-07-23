@@ -289,7 +289,12 @@ module.exports = class Curation {
 
                 case "CURATION_RESUME":
                 response = [
-                  Response.genText(i18n.__("curation.resumeintro")),
+
+                  Response.genImageTemplate(
+                      `${config.appUrl}/resume1.jpg`,
+                      i18n.__("curation.resumeintro")
+                    ),
+                  //Response.genText(i18n.__("curation.resumeintro")),
                   Response.genQuickReply(i18n.__("curation.resumeshort"), [
                     {
                       title: i18n.__("curation.resumeshortwhy"),
@@ -343,7 +348,12 @@ module.exports = class Curation {
 
                       case "CURATION_FONT":
                       response = [
-                        Response.genText(i18n.__("curation.resumemeasureexplanation")),
+                        Response.genImageTemplate(
+                            `${config.appUrl}/measure2.jpg`,
+                            i18n.__("curation.resumemeasureexplanation")
+                          ),
+
+                        //Response.genText(i18n.__("curation.resumemeasureexplanation")),
                         Response.genQuickReply(i18n.__("curation.resumefont"), [
                           {
                             title: i18n.__("curation.resumefont7-9"),
