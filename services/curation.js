@@ -290,7 +290,7 @@ module.exports = class Curation {
                     break;
 
                     //come here if the do not want to know why resume short
-                    case "CURATION_MEASURE_ONLY":
+                    case "CURATION_MEASUREONLY":
                     response = [
                       Response.genQuickReply(i18n.__("curation.resumemeasure"), [
                         {
