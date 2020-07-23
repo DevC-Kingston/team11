@@ -91,7 +91,13 @@ module.exports = class Receive {
     //receive.js is using payload to coordinate what to load. if payload category repeat it stay in that flow
       else if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
-    } else if (message.includes("#")) {
+    } else if (message.includes("menu")) {  //TRYING HERE
+      response = Curation.handlePayload("CURATION_FINISH");
+    }
+
+
+
+    else if (message.includes("#")) {
       response = Survey.handlePayload("CSAT_SUGGESTION");
     } else if (message.includes(i18n.__("care.help").toLowerCase())) {
       let care = new Care(this.user, this.webhookEvent);
