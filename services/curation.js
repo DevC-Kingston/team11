@@ -219,7 +219,8 @@ module.exports = class Curation {
           ];
             break;
 
-            case "CURATION_EYECONTACT":
+            //taking out the regular eyecontact for template
+            /*case "CURATION_EYECONTACT":
             response = [
               Response.genText(i18n.__("curation.whyworkhereexample")),
               Response.genQuickReply(i18n.__("curation.eyecontact"), [
@@ -234,6 +235,25 @@ module.exports = class Curation {
               ])
 
             ];
+              break;*/
+
+              case "CURATION_LASTQUESTION":
+              response = Response.genText(i18n.__("curation.whyworkhereexample")),
+              Response.genGenericTemplate(
+                `${config.appUrl}/styles/${outfit}.jpg`,
+                i18n.__("curation.eyecontactyesno"),
+                //i18n.__("curation.subtitle"),
+                [
+                  Response.genWebUrlButton(
+                    i18n.__("curation.shop"),
+                    "CURATION_LASTQUESTION"
+                  ),
+                  Response.genPostbackButton(
+                    i18n.__("curation.show"),
+                    "CURATION_LASTQUESTION"
+                  )
+                ]
+              );
               break;
 
               case "CURATION_LASTQUESTION":

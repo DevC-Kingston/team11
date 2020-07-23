@@ -14,7 +14,7 @@
   "get_started": {
     "welcome": "Hi {{userFirstName}}! I'm Kingsley, I'll be giving you amazing tips for your interview or resume.",
     "guidance": "Use the menu below to navigate",
-    "help": "How may we help you?"
+    "help": "How may I help you?"
   },
   "leadgen": {
     "promo": "Hi {{userFirstName}}, finding great outfits is now easier and more convenient.",
