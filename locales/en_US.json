@@ -13,7 +13,7 @@
   },
   "get_started": {
     "welcome": "Hi {{userFirstName}}! I'm Kingsley, I'll be giving you amazing tips for your interview or resume.",
-    "guidance": "Use the menu below to navigate \uD83D\uDE00",
+    "guidance": "Use the menu below to navigate",
     "help": "How may I help you?"
   },
   "leadgen": {
@@ -37,11 +37,11 @@
     "title": "Summer collection 2019",
     "subtitle": "Featured outfit",
     "show": "Another look",
-    "interviewintro" : "Let's get started on questions you may encounter in an interview and tips to answer them",
+    "interviewintro" : "Let's get started on interview questions and tips to answer them",
     "tellusaboutyourself" : "When interviewer ask: Tell me a little about yourself, what should you describe?",
     "professionallife" : "Professional life",
     "personallife" : "Personal life",
-    "tellusaboutyourselfcorrect" : "Well done, that was a great answer",
+    "tellusaboutyourselfcorrect" : "\uD83D\uDE00\uD83D\uDE00 Well done,U+1F601 that \u1F601\u1F601 was a great answer",
     "tellusaboutyourselfwrong" : "Sorry, that's not the best answer. It's better to describe mostly your professional side",
     "tellusaboutyourselfseeexample" : "Do you want to see an example",
     "tellusaboutyourselfexampleyes" : "yes",
