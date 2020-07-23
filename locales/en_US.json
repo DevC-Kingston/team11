@@ -1,6 +1,6 @@
 {
   "profile": {
-    "greeting": "Welcome to Interview Coach {{user_first_name}}! Click get started to receive useful tips for your interview and resume."
+    "greeting": "Welcome {{user_first_name}}! I'm Kingsley, click get started to receive useful tips for your interview and resume."
   },
   "menu": {
     "support": "Customer Support",
@@ -12,7 +12,7 @@
     "job" : "Job Suggestions"
   },
   "get_started": {
-    "welcome": "Hi {{userFirstName}}! Welcome to Interview Coach where you'll receive amazing tips for your interview or resume.",
+    "welcome": "Hi {{userFirstName}}! I'm Kingsley, I'll be giving you amazing tips for your interview or resume.",
     "guidance": "Use the menu below to navigate",
     "help": "How may we help you?"
   },
