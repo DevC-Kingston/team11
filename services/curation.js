@@ -430,9 +430,10 @@ module.exports = class Curation {
                   case "CURATION_JOB_SUGGESTIONS":
                   response = [
                     Response.genImageTemplate(
-                        `${config.appUrl}/careertypes.jpg`,
-                        i18n.__("curation.jobsuggestionintro")
+                        `${config.appUrl}/jobsuggestions3.jpg`,
+                        i18n.__("curation.jobblankspace")
                       ),
+                      Response.genText(i18n.__("curation.jobsuggestionintro")),
                       Response.genText(i18n.__("curation.jobsuggestioninstruction")),
                     Response.genQuickReply(i18n.__("curation.jobquestion1"), [
                       {
@@ -703,6 +704,10 @@ module.exports = class Curation {
                                 //result of selection
                                 case "CURATION_1_4_7":
                                 response = [
+                                  Response.genImageTemplate(
+                                      `${config.appUrl}/jobtypes.jpg`,
+                                      i18n.__("curation.jobblankspace")
+                                    ),
                                   Response.genText(i18n.__("curation.jobresult147")),
                                   Response.genQuickReply(i18n.__("curation.finish"), [
                                     {
@@ -720,6 +725,10 @@ module.exports = class Curation {
 
                                   case "CURATION_1_4_8":
                                   response = [
+                                    Response.genImageTemplate(
+                                        `${config.appUrl}/jobtypes.jpg`,
+                                        i18n.__("curation.jobblankspace")
+                                      ),
                                     Response.genText(i18n.__("curation.jobresult148")),
                                     Response.genQuickReply(i18n.__("curation.finish"), [
                                       {
@@ -737,6 +746,10 @@ module.exports = class Curation {
 
                                     case "CURATION_1_4_9":
                                     response = [
+                                      Response.genImageTemplate(
+                                          `${config.appUrl}/jobtypes.jpg`,
+                                          i18n.__("curation.jobblankspace")
+                                        ),
                                       Response.genText(i18n.__("curation.jobresult149")),
                                       Response.genQuickReply(i18n.__("curation.finish"), [
                                         {
@@ -754,6 +767,10 @@ module.exports = class Curation {
 
                                       case "CURATION_1_5_7":
                                       response = [
+                                        Response.genImageTemplate(
+                                            `${config.appUrl}/jobtypes.jpg`,
+                                            i18n.__("curation.jobblankspace")
+                                          ),
                                         Response.genText(i18n.__("curation.jobresult157")),
                                         Response.genQuickReply(i18n.__("curation.finish"), [
                                           {
@@ -771,6 +788,10 @@ module.exports = class Curation {
 
                                         case "CURATION_1_5_8":
                                         response = [
+                                          Response.genImageTemplate(
+                                              `${config.appUrl}/jobtypes.jpg`,
+                                              i18n.__("curation.jobblankspace")
+                                            ),
                                           Response.genText(i18n.__("curation.jobresult158")),
                                           Response.genQuickReply(i18n.__("curation.finish"), [
                                             {
@@ -788,6 +809,10 @@ module.exports = class Curation {
 
                                           case "CURATION_1_5_9":
                                           response = [
+                                            Response.genImageTemplate(
+                                                `${config.appUrl}/jobtypes.jpg`,
+                                                i18n.__("curation.jobblankspace")
+                                              ),
                                             Response.genText(i18n.__("curation.jobresult159")),
                                             Response.genQuickReply(i18n.__("curation.finish"), [
                                               {
@@ -805,6 +830,10 @@ module.exports = class Curation {
 
                                             case "CURATION_1_6_7":
                                             response = [
+                                              Response.genImageTemplate(
+                                                  `${config.appUrl}/jobtypes.jpg`,
+                                                  i18n.__("curation.jobblankspace")
+                                                ),
                                               Response.genText(i18n.__("curation.jobresult167")),
                                               Response.genQuickReply(i18n.__("curation.finish"), [
                                                 {
@@ -822,6 +851,10 @@ module.exports = class Curation {
 
                                               case "CURATION_1_6_8":
                                               response = [
+                                                Response.genImageTemplate(
+                                                    `${config.appUrl}/jobtypes.jpg`,
+                                                    i18n.__("curation.jobblankspace")
+                                                  ),
                                                 Response.genText(i18n.__("curation.jobresult168")),
                                                 Response.genQuickReply(i18n.__("curation.finish"), [
                                                   {
@@ -839,6 +872,10 @@ module.exports = class Curation {
 
                                                 case "CURATION_1_6_9":
                                                 response = [
+                                                  Response.genImageTemplate(
+                                                      `${config.appUrl}/jobtypes.jpg`,
+                                                      i18n.__("curation.jobblankspace")
+                                                    ),
                                                   Response.genText(i18n.__("curation.jobresult169")),
                                                   Response.genQuickReply(i18n.__("curation.finish"), [
                                                     {
@@ -856,6 +893,10 @@ module.exports = class Curation {
 
                                                   case "CURATION_2_4_7":
                                                   response = [
+                                                    Response.genImageTemplate(
+                                                        `${config.appUrl}/jobtypes.jpg`,
+                                                        i18n.__("curation.jobblankspace")
+                                                      ),
                                                     Response.genText(i18n.__("curation.jobresult247")),
                                                     Response.genQuickReply(i18n.__("curation.finish"), [
                                                       {
@@ -873,6 +914,10 @@ module.exports = class Curation {
 
                                                     case "CURATION_2_4_8":
                                                     response = [
+                                                      Response.genImageTemplate(
+                                                          `${config.appUrl}/jobtypes.jpg`,
+                                                          i18n.__("curation.jobblankspace")
+                                                        ),
                                                       Response.genText(i18n.__("curation.jobresult248")),
                                                       Response.genQuickReply(i18n.__("curation.finish"), [
                                                         {
@@ -890,6 +935,10 @@ module.exports = class Curation {
 
                                                       case "CURATION_2_4_9":
                                                       response = [
+                                                        Response.genImageTemplate(
+                                                            `${config.appUrl}/jobtypes.jpg`,
+                                                            i18n.__("curation.jobblankspace")
+                                                          ),
                                                         Response.genText(i18n.__("curation.jobresult249")),
                                                         Response.genQuickReply(i18n.__("curation.finish"), [
                                                           {
@@ -907,6 +956,10 @@ module.exports = class Curation {
 
                                                         case "CURATION_2_5_7":
                                                         response = [
+                                                          Response.genImageTemplate(
+                                                              `${config.appUrl}/jobtypes.jpg`,
+                                                              i18n.__("curation.jobblankspace")
+                                                            ),
                                                           Response.genText(i18n.__("curation.jobresult257")),
                                                           Response.genQuickReply(i18n.__("curation.finish"), [
                                                             {
@@ -924,6 +977,10 @@ module.exports = class Curation {
 
                                                           case "CURATION_2_5_8":
                                                           response = [
+                                                            Response.genImageTemplate(
+                                                                `${config.appUrl}/jobtypes.jpg`,
+                                                                i18n.__("curation.jobblankspace")
+                                                              ),
                                                             Response.genText(i18n.__("curation.jobresult258")),
                                                             Response.genQuickReply(i18n.__("curation.finish"), [
                                                               {
@@ -941,6 +998,10 @@ module.exports = class Curation {
 
                                                             case "CURATION_2_5_9":
                                                             response = [
+                                                              Response.genImageTemplate(
+                                                                  `${config.appUrl}/jobtypes.jpg`,
+                                                                  i18n.__("curation.jobblankspace")
+                                                                ),
                                                               Response.genText(i18n.__("curation.jobresult259")),
                                                               Response.genQuickReply(i18n.__("curation.finish"), [
                                                                 {
@@ -958,6 +1019,10 @@ module.exports = class Curation {
 
                                                               case "CURATION_2_6_7":
                                                               response = [
+                                                                Response.genImageTemplate(
+                                                                    `${config.appUrl}/jobtypes.jpg`,
+                                                                    i18n.__("curation.jobblankspace")
+                                                                  ),
                                                                 Response.genText(i18n.__("curation.jobresult267")),
                                                                 Response.genQuickReply(i18n.__("curation.finish"), [
                                                                   {
@@ -975,6 +1040,10 @@ module.exports = class Curation {
 
                                                                 case "CURATION_2_6_8":
                                                                 response = [
+                                                                  Response.genImageTemplate(
+                                                                      `${config.appUrl}/jobtypes.jpg`,
+                                                                      i18n.__("curation.jobblankspace")
+                                                                    ),
                                                                   Response.genText(i18n.__("curation.jobresult268")),
                                                                   Response.genQuickReply(i18n.__("curation.finish"), [
                                                                     {
@@ -992,6 +1061,10 @@ module.exports = class Curation {
 
                                                                   case "CURATION_2_6_9":
                                                                   response = [
+                                                                    Response.genImageTemplate(
+                                                                        `${config.appUrl}/jobtypes.jpg`,
+                                                                        i18n.__("curation.jobblankspace")
+                                                                      ),
                                                                     Response.genText(i18n.__("curation.jobresult269")),
                                                                     Response.genQuickReply(i18n.__("curation.finish"), [
                                                                       {
@@ -1009,6 +1082,10 @@ module.exports = class Curation {
 
                                                                     case "CURATION_3_4_7":
                                                                     response = [
+                                                                      Response.genImageTemplate(
+                                                                          `${config.appUrl}/jobtypes.jpg`,
+                                                                          i18n.__("curation.jobblankspace")
+                                                                        ),
                                                                       Response.genText(i18n.__("curation.jobresult347")),
                                                                       Response.genQuickReply(i18n.__("curation.finish"), [
                                                                         {
@@ -1026,6 +1103,10 @@ module.exports = class Curation {
 
                                                                       case "CURATION_3_4_8":
                                                                       response = [
+                                                                        Response.genImageTemplate(
+                                                                            `${config.appUrl}/jobtypes.jpg`,
+                                                                            i18n.__("curation.jobblankspace")
+                                                                          ),
                                                                         Response.genText(i18n.__("curation.jobresult348")),
                                                                         Response.genQuickReply(i18n.__("curation.finish"), [
                                                                           {
@@ -1043,6 +1124,10 @@ module.exports = class Curation {
 
                                                                         case "CURATION_3_4_9":
                                                                         response = [
+                                                                          Response.genImageTemplate(
+                                                                              `${config.appUrl}/jobtypes.jpg`,
+                                                                              i18n.__("curation.jobblankspace")
+                                                                            ),
                                                                           Response.genText(i18n.__("curation.jobresult349")),
                                                                           Response.genQuickReply(i18n.__("curation.finish"), [
                                                                             {
@@ -1060,6 +1145,10 @@ module.exports = class Curation {
 
                                                                           case "CURATION_3_5_7":
                                                                           response = [
+                                                                            Response.genImageTemplate(
+                                                                                `${config.appUrl}/jobtypes.jpg`,
+                                                                                i18n.__("curation.jobblankspace")
+                                                                              ),
                                                                             Response.genText(i18n.__("curation.jobresult357")),
                                                                             Response.genQuickReply(i18n.__("curation.finish"), [
                                                                               {
@@ -1077,6 +1166,10 @@ module.exports = class Curation {
 
                                                                             case "CURATION_3_5_8":
                                                                             response = [
+                                                                              Response.genImageTemplate(
+                                                                                  `${config.appUrl}/jobtypes.jpg`,
+                                                                                  i18n.__("curation.jobblankspace")
+                                                                                ),
                                                                               Response.genText(i18n.__("curation.jobresult358")),
                                                                               Response.genQuickReply(i18n.__("curation.finish"), [
                                                                                 {
@@ -1094,6 +1187,10 @@ module.exports = class Curation {
 
                                                                               case "CURATION_3_5_9":
                                                                               response = [
+                                                                                Response.genImageTemplate(
+                                                                                    `${config.appUrl}/jobtypes.jpg`,
+                                                                                    i18n.__("curation.jobblankspace")
+                                                                                  ),
                                                                                 Response.genText(i18n.__("curation.jobresult359")),
                                                                                 Response.genQuickReply(i18n.__("curation.finish"), [
                                                                                   {
@@ -1111,6 +1208,10 @@ module.exports = class Curation {
 
                                                                                 case "CURATION_3_6_7":
                                                                                 response = [
+                                                                                  Response.genImageTemplate(
+                                                                                      `${config.appUrl}/jobtypes.jpg`,
+                                                                                      i18n.__("curation.jobblankspace")
+                                                                                    ),
                                                                                   Response.genText(i18n.__("curation.jobresult367")),
                                                                                   Response.genQuickReply(i18n.__("curation.finish"), [
                                                                                     {
@@ -1128,7 +1229,11 @@ module.exports = class Curation {
 
                                                                                   case "CURATION_3_6_8":
                                                                                   response = [
-                                                                                    Response.genText(i18n.__("curation.jobresult369")),
+                                                                                    Response.genImageTemplate(
+                                                                                        `${config.appUrl}/jobtypes.jpg`,
+                                                                                        i18n.__("curation.jobblankspace")
+                                                                                      ),
+                                                                                    Response.genText(i18n.__("curation.jobresult368")),
                                                                                     Response.genQuickReply(i18n.__("curation.finish"), [
                                                                                       {
                                                                                         title: i18n.__("curation.mainmenu"),
@@ -1142,6 +1247,27 @@ module.exports = class Curation {
 
                                                                                   ];
                                                                                     break;
+
+                                                                                    case "CURATION_3_6_9":
+                                                                                    response = [
+                                                                                      Response.genImageTemplate(
+                                                                                          `${config.appUrl}/jobtypes.jpg`,
+                                                                                          i18n.__("curation.jobblankspace")
+                                                                                        ),
+                                                                                      Response.genText(i18n.__("curation.jobresult369")),
+                                                                                      Response.genQuickReply(i18n.__("curation.finish"), [
+                                                                                        {
+                                                                                          title: i18n.__("curation.mainmenu"),
+                                                                                          payload: "CURATION_FINISH"
+                                                                                        },
+                                                                                        {
+                                                                                          title: i18n.__("curation.startover"),
+                                                                                          payload: "CURATION_JOB_SUGGESTIONS"
+                                                                                        }
+                                                                                      ])
+
+                                                                                    ];
+                                                                                      break;
 
 
                       //3rd set
