@@ -103,7 +103,7 @@ module.exports = class Receive {
             message: this.webhookEvent.message.text
           })
         ),
-        Response.genText(i18n.__("get_started.guidance")),
+        //Response.genText(i18n.__("get_started.guidance")),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
             title: i18n.__("menu.suggestion"),
@@ -205,7 +205,7 @@ module.exports = class Receive {
     } else if (payload.includes("CHAT-PLUGIN")) {
       response = [
         Response.genText(i18n.__("chat_plugin.prompt")),
-        Response.genText(i18n.__("get_started.guidance")),
+        //Response.genText(i18n.__("get_started.guidance")),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
             title: i18n.__("care.order"),
@@ -234,8 +234,8 @@ module.exports = class Receive {
     let welcomeMessage =
       i18n.__("get_started.welcome") +
       " " +
-      i18n.__("get_started.guidance") +
-      ". " +
+      //i18n.__("get_started.guidance") +
+      //". " +
       i18n.__("get_started.help");
 
     let response = Response.genQuickReply(welcomeMessage, [

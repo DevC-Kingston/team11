@@ -319,7 +319,7 @@ module.exports = class Curation {
                           },
                           {
                             title: i18n.__("curation.resumefont10-12"),
-                            payload: "CURATION_FONTcorrect"
+                            payload: "CURATION_FONTCORRECT"
                           },
                           {
                             title: i18n.__("curation.resumefont13-15"),
