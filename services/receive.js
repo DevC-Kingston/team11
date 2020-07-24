@@ -83,7 +83,16 @@ module.exports = class Receive {
 
     if (
       (greeting && greeting.confidence > 0.8) ||
-      message.includes("start over") || message.includes("hi") || message.includes("hello") //might not need lower case here
+      message.includes("start over") || message.includes("hi") || message.includes("hi!") || message.includes("hello")
+      || message.includes("stuck") || message.includes("dont know what to do") || message.includes("what do i do")
+      || message.includes("where to go") || message.includes("how") || message.includes("how to use")
+      || message.includes("hola") || message.includes("hey") || message.includes("what")
+       || message.includes("howdy") || message.includes("help") || message.includes("hey man")
+       || message.includes("how are you") || message.includes("how are you doing") || message.includes("morning")
+       || message.includes("good morning") || message.includes("good afternoon") || message.includes("good evening")
+      || message.includes("nice to meet you") || message.includes("good day") || message.includes("night")
+      || message.includes("bonjour") || message.includes("salut") || message.includes("salve") || message.includes("ola")
+      || message.includes("buna ziua") || message.includes("buna") || message.includes("hei") || message.includes("ce faci")
     ) {
       //seems genNuxMessage makes it start over
       response = Response.genNuxMessage(this.user);
