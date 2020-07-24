@@ -13,7 +13,7 @@
   },
   "get_started": {
     "welcome": "Hi {{userFirstName}}! I'm Kingsley, I'll be giving you amazing tips for your interview or resume.",
-    "guidance": "Use the options below to. At anytime, type menu to return here",
+    "guidance": "Navigate with the options below. At anytime, type menu to return here",
     "help": "How may I help you?"
   },
   "leadgen": {
