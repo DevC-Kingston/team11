@@ -1,4 +1,4 @@
-# Job Coach Bot
+# Kingsley
 
 [//]: <> (Please use this Winning Hackathon Application as an example:
 https://devpost.com/software/rewise-ai-powered-revision-bot)
