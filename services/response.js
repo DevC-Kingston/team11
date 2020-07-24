@@ -140,7 +140,11 @@ module.exports = class Response {
       },
       {
         title: i18n.__("menu.help"),
-        payload: "CARE_HELP"
+        payload: "CURATION_RESUME"//change from care_help to curation_resume to load resume
+      },
+      {
+        title: i18n.__("menu.job"),
+        payload: "CURATION_JOB_SUGGESTIONS"//added this part
       }
     ]);
 

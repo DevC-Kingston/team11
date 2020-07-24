@@ -1,29 +1,55 @@
 <% include header %>
 
 <div class="container">
-  <h1>Original Coast Clothing</h1>
-  <img src="/logo.png" />
+  <h1>Job Coach</h1>
+  <img src="/kingsleylogo.jpeg" />
   <p class="lead">
-    We’re open 7 days, so start your shopping experience now!
+    Welcome! here you'll receive valuable tips to ace your interview
   </p>
   <p>
-    This site is part of the Sample Messenger Bot experience of Original Coast
-    Clothing
+    Job Coach website
   </p>
   <ul>
     <li>
-      <a href="https://www.originalcoastclothing.com/"
-        >Original Coast Clothing Website</a
+      <a href="https://glacial-chamber-31755.herokuapp.com/"
+        >Job Coach</a
       >
     </li>
     <li>
-      Wan't to build your own?
+      Your chances will increase!
       <a
-        href="https://developers.facebook.com/docs/messenger-platform/getting-started/sample-apps/original-coast-clothing"
-        >DevDocs</a
+        href="https://glacial-chamber-31755.herokuapp.com/"
+        >Job Coach website</a
       >
     </li>
   </ul>
 </div>
+
+<!-- messenger chat plugin start. enables messenger to be on website-->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v7.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="109685830825252"
+theme_color="#facc28">
+</div>
+      <!-- messenger chat plugin ends-->
 
 <% include footer %>

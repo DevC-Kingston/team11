@@ -78,28 +78,21 @@ module.exports = class Receive {
 
     let message = this.webhookEvent.message.text.trim().toLowerCase();
 
+    //maybe can choose what response here if confident
     let response;
 
     if (
       (greeting && greeting.confidence > 0.8) ||
-      message.includes("start over")
+      message.includes("start over") || message.includes("hi") || message.includes("hello") //might not need lower case here
     ) {
+      //seems genNuxMessage makes it start over
       response = Response.genNuxMessage(this.user);
-    } else if (Number(message)) {
+    } //handlePayload choosewhich file to load or use based on listed inputs. This seems to be parsing all received text. can do some things here
+    //receive.js is using payload to coordinate what to load. if payload category repeat it stay in that flow
+      /* if (Number(message)) {
       response = Order.handlePayload("ORDER_NUMBER");
-    } else if (message.includes("#")) {
-      response = Survey.handlePayload("CSAT_SUGGESTION");
-    } else if (message.includes(i18n.__("care.help").toLowerCase())) {
-      let care = new Care(this.user, this.webhookEvent);
-      response = care.handlePayload("CARE_HELP");
-    } else {
+    }*/ else if (message.includes("menu")) {  //let it recognize menu
       response = [
-        Response.genText(
-          i18n.__("fallback.any", {
-            message: this.webhookEvent.message.text
-          })
-        ),
-        Response.genText(i18n.__("get_started.guidance")),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
             title: i18n.__("menu.suggestion"),
@@ -107,7 +100,39 @@ module.exports = class Receive {
           },
           {
             title: i18n.__("menu.help"),
-            payload: "CARE_HELP"
+            payload: "CURATION_RESUME"
+          },
+          {
+            title: i18n.__("menu.job"),
+            payload: "CURATION_JOB_SUGGESTIONS"
+          }
+        ])
+      ];
+    }/*else if (message.includes("#")) {
+      response = Survey.handlePayload("CSAT_SUGGESTION");
+    }*//* else if (message.includes(i18n.__("care.help").toLowerCase())) {
+      let care = new Care(this.user, this.webhookEvent);
+      response = care.handlePayload("CARE_HELP");
+    }*/else {
+      response = [
+        Response.genText(
+          i18n.__("fallback.any", {
+            message: this.webhookEvent.message.text
+          })
+        ),
+        //Response.genText(i18n.__("get_started.guidance")),
+        Response.genQuickReply(i18n.__("get_started.help"), [
+          {
+            title: i18n.__("menu.suggestion"),
+            payload: "CURATION"
+          },
+          {
+            title: i18n.__("menu.help"),
+            payload: "CURATION_RESUME"
+          },
+          {
+            title: i18n.__("menu.job"),
+            payload: "CURATION_JOB_SUGGESTIONS"
           }
         ])
       ];
@@ -124,10 +149,12 @@ module.exports = class Receive {
     let attachment = this.webhookEvent.message.attachments[0];
     console.log("Received attachment:", `${attachment} for ${this.user.psid}`);
 
+    //sort out here. need to have regular menu
     response = Response.genQuickReply(i18n.__("fallback.attachment"), [
       {
         title: i18n.__("menu.help"),
-        payload: "CARE_HELP"
+        payload: "CURATION_RESUME"  //change from care_help to curation_resume toget it to load resume instead
+        //payload: "CARE_HELP"
       },
       {
         title: i18n.__("menu.start_over"),
@@ -196,7 +223,7 @@ module.exports = class Receive {
     } else if (payload.includes("CHAT-PLUGIN")) {
       response = [
         Response.genText(i18n.__("chat_plugin.prompt")),
-        Response.genText(i18n.__("get_started.guidance")),
+        //Response.genText(i18n.__("get_started.guidance")),
         Response.genQuickReply(i18n.__("get_started.help"), [
           {
             title: i18n.__("care.order"),
@@ -225,8 +252,8 @@ module.exports = class Receive {
     let welcomeMessage =
       i18n.__("get_started.welcome") +
       " " +
-      i18n.__("get_started.guidance") +
-      ". " +
+      //i18n.__("get_started.guidance") +
+      //". " +
       i18n.__("get_started.help");
 
     let response = Response.genQuickReply(welcomeMessage, [
@@ -236,7 +263,11 @@ module.exports = class Receive {
       },
       {
         title: i18n.__("menu.help"),
-        payload: "CARE_HELP"
+        payload: "CURATION_RESUME"
+      },
+      {
+        title: i18n.__("menu.job"),
+        payload: "CURATION_JOB_SUGGESTIONS"
       }
     ]);
 
