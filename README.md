@@ -45,22 +45,25 @@ Tech Stack & Documentation:
   We understood the concept of programming better. We used a language that none of us had built a software of this caliber with before. Being out of our comfort zone, we realised that if we can truly appreciate the programming concept, then all these different programming languages will just be syntaxes.
 - Learning 2
   We learnt from each other. Everyone had amazing ideas that none of us thought of. We certainly learned that working in a team can accomplish wonderful things. It was the only reason why we could not only finish on time, but deliver a quality product doing justice to the idea.
+ - Learning 3
+  How to build chatbots. Not only that, but we discovered the powere of messenger. The potential, the reach, it can be incorporated in anything. 
 
 ## What's next for “Kingsley”
 
 Product Roadmap - next features for example
 
 1. Feature 1
-  Kingsley will be incorporating the Google Cloud Talent Solutions API. This will allow Kingsley to be able to suggest jobs to user. Who kows maybe Kingsley will be able to apply for them... 
+  Kingsley will be incorporating the Google Cloud Talent Solutions API. This will better allow Kingsley to suggest jobs to users. Who knows maybe Kingsley will be able to apply for them... 
   
 1. Feature 2
-  We intend to attempt integrating Grammerbot.io or another API to have Kingsley scan resumes to point out errors and better be able to give tips as aligned with his core function
+  We intend to attempt at integrating Grammerbot.io or another API to have Kingsley scan resumes to point out errors. With this Kingsley can improve in with corrections and being more helpful. As it's aligned with his core functions, being able to help users the best way possible is the goal in his creation.
   
 
 ## Built With - provide the tech stack used
 
 - Javascript/Node.js
-- example2
+- Messenger Platform Chat Plugin
+- Heroku: Cloud Application Platform
 
 ## Try it out
 
