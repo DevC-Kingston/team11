@@ -15,8 +15,9 @@ This Chatbot has been designed with the aim to assist/coach interested individua
 
 ## List your Chatbot’s features and use cases
 
-1. 1
-1. 2
+1. 1 Interview Coaching
+1. 2 Resume Help
+1. 3 Job Suggestions
 
 ## How we built it
 
@@ -28,31 +29,40 @@ Tech Stack & Documentation:
 ## Challenges we ran into
 
 1. Challenge 1
+  We wanted to include the Google Cloud Talent Solution API for the job suggestions use case. We didn't get a chance to see if it could work because we were still new to the chatbot and only had a few days. The race against time was exhilirating though
 1. Challenge 2
 
 ## Accomplishments that we're proud of
 
 - Accomplishment 1
+  We got to to include as much as 3 core features. We're proud to have accomplished that much in such a short time
 - Accomplishment 2
+  We got a chance to include an algirithm that suggest the best type of job for a user based on the questions asked. This algorithm uses the concept of a hits on a grid based on responses received by each user. In the time it was created, it was designed to have as much as 27 different possible permutations.  
 
 ## What we learned
 
 - Learning 1
+  We understood the concept of programming better. We used a language that none of us had built a software of this caliber with before. Being out of our comfort zone, we realised that if we can truly appreciate the programming concept, then all these different programming languages will just be syntaxes.
 - Learning 2
+  We learnt from each other. Everyone had amazing ideas that none of us thought of. We certainly learned that working in a team can accomplish wonderful things. It was the only reason why we could not only finish on time, but deliver a quality product doing justice to the idea.
 
-## What's next for “Insert Your Bot Name”
+## What's next for “Kingsley”
 
 Product Roadmap - next features for example
 
 1. Feature 1
+  Kingsley will be incorporating the Google Cloud Talent Solutions API. This will allow Kingsley to be able to suggest jobs to user. Who kows maybe Kingsley will be able to apply for them... 
+  
 1. Feature 2
+  We intend to attempt integrating Grammerbot.io or another API to have Kingsley scan resumes to point out errors and better be able to give tips as aligned with his core function
+  
 
 ## Built With - provide the tech stack used
 
-- example1
+- Javascript/Node.js
 - example2
 
 ## Try it out
 
-[Add link to Public GitHub Page](link) </br>
-[Add link to GitHub Page](link)
+[https://devc-kingston.github.io/team11/](link) </br>
+[https://glacial-chamber-31755.herokuapp.com/](link)
