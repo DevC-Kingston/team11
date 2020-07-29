@@ -287,6 +287,7 @@ module.exports = class Curation {
 
                 //**************************RESUME********************
                 //testing pull request
+                //testing pull request again
                 case "CURATION_RESUME":
                 response = [
 
