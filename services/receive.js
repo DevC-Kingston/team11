@@ -94,6 +94,7 @@ module.exports = class Receive {
       || message.includes("nice to meet you") || message.includes("good day") || message.includes("night")
       || message.includes("bonjour") || message.includes("salut") || message.includes("salve") || message.includes("ola")
       || message.includes("buna ziua") || message.includes("buna") || message.includes("hei") || message.includes("ce faci")
+       || message.includes("Can you tell me more about your business?") || message.includes("What services do you offer?")
     ) {
       //seems genNuxMessage makes it start over
       response = Response.genNuxMessage(this.user);
